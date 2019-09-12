@@ -68,9 +68,9 @@ function page_content()
 /**
  * Starts everything and displays the template.
  */
-function init()
+/*function init()
 {
     require config('CSS') . '/template.php';
 }
-
+*/
 ?>
