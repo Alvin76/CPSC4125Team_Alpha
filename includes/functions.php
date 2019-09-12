@@ -70,7 +70,7 @@ function page_content()
  */
 function init()
 {
-    require config('template_path') . '/template.php';
+    require config('CSS_path') . '/template.php';
 }
 
 ?>
