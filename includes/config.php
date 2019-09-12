@@ -13,8 +13,8 @@ function config($key = '')
         'site_url' => 'https://team-alpha-web-site.herokuapp.com/',
         'nav_menu' => [
             '' => 'Home',
-            'about-me' => 'About Me',
-            'hari' => 'Hari'
+            'hello-world' => 'Hello World',
+            'Menu' => 'Menu'
         ],
         'template_path' => 'template',
         'content_path' => 'content',
