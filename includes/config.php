@@ -14,7 +14,9 @@ function config($key = '')
         'nav_menu' => [
             '' => 'Home',
             'hello-world' => 'Hello World',
-            'Menu' => 'Menu'
+            'Menu' => 'Menu',
+            'search' => 'Search',
+            'results' => 'Results'
         ],
         'template_path' => 'template',
         'content_path' => 'content',
