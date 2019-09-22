@@ -8,6 +8,7 @@
   <p>fucking hell i hate php !</p>
 
   <?php require 'menu.php';
+    echo "I have a $color $car.";
     vehicle();
   ?>
 
