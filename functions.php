@@ -8,9 +8,3 @@ require "/config.php";
       echo "This is a footer</br>"
     echo "</footer>"
   }
-
-
-<footer>
-    <small>&copy;<?php echo date('Y'); ?> <?php site_name(); ?>.<br><?php site_version(); ?></small>
-</footer>
- ?>
