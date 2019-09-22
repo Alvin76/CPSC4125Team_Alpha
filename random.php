@@ -28,24 +28,13 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
+        <?php nav_bar(); ?>
       </ul>
     </div>
   </nav>
     <?php echo '<p>Hello World</p>'; ?>
-    <a href="/index.php">Visit the home pageee.</a>
-
+    <a href="/index.php">Visit the home page.</a>
+    <?php nav_bar(); ?>
 
     <footer>
         <p> A footer </p>
