@@ -70,8 +70,8 @@ function nav_bar()
   global $urls;
 
   for ($x = 1; $x <= sizeof($nav_items) + 1; $x++) {
-  //  $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= /"' . $url[$x] . '">'. $name[$x] .'</a></li>';
-    $nav_bar_menu .= 'gitgud';
+    $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= /"' . $url[$x] . '">'. $name[$x] .'</a></li>';
+    $nav_bar_menu .= "' . $url[$x] . '";
   }
   echo $nav_bar_menu;
 }
