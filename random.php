@@ -9,4 +9,5 @@
  <?php require '/functions.php';
   echo $websiteURL;
  ?>
+ <p>fucking hell i hate php !</p>
 </html>
