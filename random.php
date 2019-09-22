@@ -7,21 +7,9 @@
  <a href="/index.php">Visit the home pageee.</a>
   <p>fucking hell i hate php !</p>
 
-  <?php include 'menu.php';
-  echo "I have a $color $car.";
+  <?php require 'menu.php';
+    vehicle();
   ?>
-
-  <?php require '/functions.php';
-   echo $websiteURL;
-  ?>
-  <?php require 'functions.php';
-  echo $websiteURL;
-  ?>
-
-  <?php include 'functions.php';
-  echo "I have a $websiteURL .";
-  ?>
-
 
  </body>
 
