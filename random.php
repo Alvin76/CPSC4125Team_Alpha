@@ -36,6 +36,8 @@
     <a href="/Home.php">Visit the home page.</a>
     <footer>
         <p> A footer </p>
+        <?php footer(); ?>
+        <p> end footer </p>
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
