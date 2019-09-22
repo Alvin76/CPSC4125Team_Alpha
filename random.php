@@ -13,7 +13,12 @@
   echo "I have a $color $car.";
   echo "</br> cool</br>";
   vehicle();
-  echo "</br> Do i still have two vehicles?"
+  echo "</br> Do i still have two vehicles?";
+  ?>
+
+  <?php require 'functions.php';
+  footer();
+  echo "neet";
   ?>
 
   </br>
