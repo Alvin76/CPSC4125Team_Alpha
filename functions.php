@@ -7,13 +7,33 @@
     echo "</footer>";
   } -->
 
-
 <?php
+
 $color='red';
 $car='BMW';
 $websiteURL = 'https://test-app-ericsson.herokuapp.com/';
 $authors = array('James', 'Adam', 'Taylor', 'Evan');
-$nav_items = array('Home', 'Todays', 'Random');
+$nav_items = array('Home Page', 'Todays Comic', 'Random Comic');
+$urls = array('Home.php', 'todays.php', 'random.php');
+
+function config($key = '')
+{
+    $config = [
+        'name' => 'Git Gud',
+        'XKCDURL' => 'http://xkcd.com/info.0.json',
+        'nav_bar' => [
+          '' => 'Home',
+          'Home'      => "Home Page",
+          'random' => 'Random Comic',
+          'todays' => 'Todays Comic'
+        ],
+        'template_path' => 'template',
+        'content_path' => 'content',
+        'version' => 'v3.0',
+    ];
+    return isset($config[$key]) ? $config[$key] : null;
+}
+
 
 
 function vehicle()
@@ -27,8 +47,7 @@ function nav_bar2()
   $nav_bar_menu = '';
   $nav_items = config('nav_bar');
   foreach ($nav_items as $uri => $name) {
-    $class = str_replace('page=', '', $_SERVER['QUERY_STRING']) == $uri ? ' active' : '';
-    $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
+    $url = '/' $uri;
     $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= "' . $url . '">'. $name .'</a></li>';
     //echo '<li class="nav-item"><a class="nav-link" href="#">'+$name+'</a></li>';
   }
