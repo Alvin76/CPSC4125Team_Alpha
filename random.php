@@ -1,4 +1,6 @@
 <html>
+<?php require 'functions.php';?>
+
  <head>
   <title>PHP Test page 2</title>
  </head>
@@ -9,7 +11,7 @@
 
 
 
-  <?php require 'functions.php';
+  <?php
   echo "I have a $color $car.";
   echo "</br> cool</br>";
   vehicle();
@@ -39,7 +41,7 @@
   echo "</br> Do i still have two vehicles?";
   ?>
 
-<p> bruh </p>
+<p> still working ? </p>
   </br>
 
 
