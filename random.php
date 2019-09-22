@@ -33,7 +33,7 @@
     </div>
   </nav>
     <?php echo '<p>Hello World</p>'; ?>
-    <a href="/index.php">Visit the home page.</a>
+    <a href="/Home.php">Visit the home page.</a>
     <footer>
         <p> A footer </p>
     </footer>

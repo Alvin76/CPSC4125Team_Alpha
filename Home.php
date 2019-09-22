@@ -1,12 +1,9 @@
 <html>
-
  <head>
   <title>PHP Test page 10</title>
  </head>
  <body>
  <?php echo '<p>Hello World</p>'; ?>
- <a href="/random.php">Visit the random page</a>
+ <a href="/Random.php">Visit the random page</a>
  </body>
 </html>
-
-<meta http-equiv="refresh" content="0; url=http://example.com/" />
