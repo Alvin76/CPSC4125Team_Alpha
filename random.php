@@ -19,6 +19,12 @@
   <body>
     <?php echo '<p>Hello World</p>'; ?>
     <a href="/index.php">Visit the home pageee.</a>
+    <?php
+    echo "I have a $color $car.";
+    echo "</br> cool</br>";
+    vehicle();
+    echo "</br> Do i still have two vehicles?";
+    ?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
