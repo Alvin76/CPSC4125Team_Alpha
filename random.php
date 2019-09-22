@@ -12,6 +12,7 @@
   <?php require 'menu.php';
   echo "I have a $color $car.";
   echo "</br> cool";
+  vehicle();
   ?>
 
   </br>
