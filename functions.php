@@ -1,10 +1,12 @@
 <?php
-require "/config.php";
+//require "/config.php";
 
-  $websiteURL = "https://test-app-ericsson.herokuapp.com/"
+  $websiteURL = "https://test-app-ericsson.herokuapp.com/";
 
   function footer(){
-    echo "<footer>"
-      echo "This is a footer</br>"
-    echo "</footer>"
+    echo "<footer>";
+      echo "This is a footer</br>";
+    echo "</footer>";
   }
+
+?>
