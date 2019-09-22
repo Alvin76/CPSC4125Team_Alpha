@@ -3,7 +3,8 @@ $color='red';
 $car='BMW';
 
 
-function vehicle(){
+function vehicle()
+{
   echo "I have a $color $car.";
 }
 ?>
