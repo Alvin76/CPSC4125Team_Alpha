@@ -32,7 +32,7 @@
   echo "This ", "string ", "was ", "made ", "with multiple parameters.";
   ?>
 
-  <?php require 'functions.php';
+  <?php
   echo "I have a $color $car.";
   echo "</br> cool</br>";
   footer();
