@@ -31,6 +31,13 @@
   echo "I'm about to learn PHP!<br>";
   echo "This ", "string ", "was ", "made ", "with multiple parameters.";
   ?>
+
+  <?php require 'functions.php';
+  echo "I have a $color $car.";
+  echo "</br> cool</br>";
+  footer();
+  echo "</br> Do i still have two vehicles?";
+  ?>
 <p> bruh </p>
   </br>
 
