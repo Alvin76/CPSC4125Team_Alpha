@@ -34,8 +34,6 @@
   </nav>
     <?php echo '<p>Hello World</p>'; ?>
     <a href="/index.php">Visit the home page.</a>
-    <?php nav_bar(); ?>
-
     <footer>
         <p> A footer </p>
     </footer>
