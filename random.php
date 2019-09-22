@@ -28,7 +28,7 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <?php nav_bar2(); ?>
+        <?php nav_bar(); ?>
       </ul>
     </div>
   </nav>

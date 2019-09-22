@@ -42,23 +42,35 @@ function vehicle()
   echo "I have two $color $car.";
 }
 
-function nav_bar2()
-{
-  $nav_bar_menu = '';
-  $nav_items = config('nav_bar');
-  foreach ($nav_items as $uri => $name) {
-    $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= "' . $name . '">'. $name .'</a></li>';
+//function nav_bar2()
+//{
+  //$nav_bar_menu = '';
+//  $nav_items = config('nav_bar');
+  //foreach ($nav_items as $uri => $name) {
+    //$nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= "' . $name . '">'. $name .'</a></li>';
     //echo '<li class="nav-item"><a class="nav-link" href="#">'+$name+'</a></li>';
-  }
-  echo trim($nav_bar_menu);
-}
+
+//  }
+//  echo trim($nav_bar_menu);
+//}
+
+// function nav_bar2()
+// {
+//   global $nav_items;
+//   $nav_bar_menu = '';
+//   foreach ($nav_items as $key => $name) {
+//     $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= /"' . $name . '.php">'. $name .'</a></li>';
+//   }
+//   echo $nav_bar_menu;
+// }
 
 function nav_bar()
 {
   global $nav_items;
-  $nav_bar_menu = '';
-  foreach ($nav_items as $key => $name) {
-    $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= /"' . $name . '.php">'. $name .'</a></li>';
+  global $urls;
+
+  for ($x = 0; $x <= sizeof($nav_items); $x++) {
+    $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= /"' . $url[$x] . '">'. $name[$x] .'</a></li>';
   }
   echo $nav_bar_menu;
 }
