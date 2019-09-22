@@ -40,7 +40,7 @@ function nav_bar()
   global $nav_items;
   $nav_bar_menu = '';
   foreach ($nav_items as $key => $name) {
-    $nav_bar_menu .= '<p>neet</p>';
+    $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= /"' . $name . '.php">'. $name .'</a></li>';
   }
   echo $nav_bar_menu;
 }
