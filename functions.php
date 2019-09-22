@@ -70,10 +70,12 @@ function nav_bar()
 
 function footer()
 {
+  $footertag = '<footer>';
+  $footerclosetag = '</footer>';
   global $websiteURL;
-  echo '<p> ' . $websiteURL . ' </p>';
-  // echo "$websiteURL By Team Alpha! </br>";
-  // echo "Team Alpha: ";
+  echo $footertag;
+  echo '<p>The website ' . $websiteURL . 'is By Team Alpha!</p>';
+  echo $footerclosetag;
 }
 
 ?>
