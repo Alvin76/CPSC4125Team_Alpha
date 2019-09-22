@@ -19,8 +19,8 @@
   <p> but why ? </p>
 
 
-  <?php require 'functions.php';
-  echo $websiteURL;
+  <?php
+//  echo $websiteURL;
   echo "neet";
   ?>
 
