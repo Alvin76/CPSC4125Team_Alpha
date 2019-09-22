@@ -12,7 +12,7 @@
 $color='red';
 $car='BMW';
 $websiteURL = 'https://test-app-ericsson.herokuapp.com/';
-$authors = array('James', 'Adam', 'Taylor', 'Evan')
+$authors = array('James', 'Adam', 'Taylor', 'Evan');
 
 
 function vehicle()
