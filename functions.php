@@ -24,6 +24,21 @@ function vehicle()
 // I find this to be the more intutive method.
 // If you look on the appending of $nav_bar_menu you can see the html
 // that will be dynamically created on the site.
+
+function head(){
+  $head = '<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Required PHP Functions -->
+
+    <title>Team Alpha</title>
+  </head>';
+  echo $head;
+}
+
 function nav_bar()
 {
   global $nav_items, $urls;
