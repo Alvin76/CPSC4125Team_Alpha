@@ -5,6 +5,6 @@
  </head>
  <body>
  <?php echo '<p>Hello World</p>'; ?>
- <a href="/random.php">Visit the other page</a>
+ <a href="/random.php">Visit the random page</a>
  </body>
 </html>

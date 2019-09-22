@@ -4,7 +4,7 @@
  </head>
  <body>
  <?php echo '<p>Hello World</p>'; ?>
- <a href="/index.php">Visit the other page</a>
+ <a href="/index.php">Visit the home page</a>
  </body>
 
  <?php require 'functions.php'; footer();?>
