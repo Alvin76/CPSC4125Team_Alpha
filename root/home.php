@@ -1,14 +1,3 @@
-<?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
-header("Cache-Control: post-check=0, pre-check=0", false);
-header("Pragma: no-cache");
-require 'includes/config.php';
-require 'includes/functions.php';
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,7 +41,7 @@ require 'includes/functions.php';
           <h2><?php page_title(); ?></h2>
       </div>
       <?php hello(); ?>
-      // ?php page_content(); ?>
+      <!-- ?php page_content(); ?> -->
     </article>
 
     <footer>

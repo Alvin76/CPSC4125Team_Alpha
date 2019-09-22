@@ -39,6 +39,28 @@ function nav_menu($sep = ' | ')
     echo trim($nav_menu, $sep);
 }
 
+
+
+function nav_bar()
+{
+  $nav_bar_menu = '';
+  $nav_items = config('nav_bar');
+  foreach ($nav_items as $uri => $name) {
+    $class = str_replace('page=', '', $_SERVER['QUERY_STRING']) == $uri ? ' active' : '';
+    $url = config('site_url') . '/' . (config('pretty_uri') || $uri == '' ? '' : '?page=') . $uri;
+    $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= "' . $url . '">'. $name .'</a></li>';
+    //echo '<li class="nav-item"><a class="nav-link" href="#">'+$name+'</a></li>';
+  }
+  echo trim($nav_bar_menu);
+}
+
+
+
+function hello()
+{
+  echo "is it me you're looking for ?";
+}
+
 /**
  * Displays page title. It takes the data from
  * URL, it replaces the hyphens with spaces and
@@ -55,21 +77,25 @@ function page_title()
  * the static pages inside the pages/ directory.
  * When not found, display the 404 error page.
  */
-function page_content()
-{
-    $page = isset($_GET['page']) ? $_GET['page'] : 'home';
-    $path = getcwd() . '/' . config('content_path') . '/' . $page . '.phtml';
-    if (! file_exists($path)) {
-        $path = getcwd() . '/' . config('content_path') . '/404.phtml';
-    }
-    echo file_get_contents($path);
-}
+// function page_content()
+// {
+//     $page = isset($_GET['page']) ? $_GET['page'] : 'home';
+//     $path = getcwd() . '/' . config('content_path') . '/' . $page . '.php';
+//     if (! file_exists($path)) {
+//         $path = getcwd() . '/' . config('content_path') . '/404.phtml';
+//     }
+//     echo file_get_contents($path);
+// }
 
 /**
  * Starts everything and displays the template.
  */
- function init()
- {
-     require config('template_path') . '/template.php';
- }
+function init()
+{
+    require config('root_path') . '/home.php';
+    require config('root_path') . '/random.php';
+    require config('root_path') . '/todays.php';
+//    require config('content_path')  . '/todays-comic.phtml';
+}
+
 ?>

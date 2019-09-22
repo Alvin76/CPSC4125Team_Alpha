@@ -8,15 +8,20 @@
 function config($key = '')
 {
     $config = [
-        'name' => 'Simple PHP Website',
-        'pretty_uri' => false,
-        'site_url' => 'https://team-alpha-web-site.herokuapp.com/',
+        'name' => 'Git Gud',
+        'XKCDURL' => 'http://xkcd.com/info.0.json',
         'nav_menu' => [
             '' => 'Home',
-            'hello-world' => 'Hello World',
-            'Menu' => 'Menu'
+            'about-us' => 'About Us',
+            'contact' => 'Contact'
         ],
-        'template_path' => 'template',
+        'nav_bar' => [
+          '' => 'Home',
+          'about-me'      => "About Me",
+          'random-comic' => 'Random Comic',
+          'todays-comic' => 'Todays Comic'
+        ],
+        'root_path' => 'root',
         'content_path' => 'content',
         'version' => 'v3.0',
     ];
