@@ -9,10 +9,11 @@
 
 
 
-  <?php require 'menu.php';
+  <?php require 'functions.php';
   echo "I have a $color $car.";
   echo "</br> cool</br>";
   vehicle();
+  echo "</br> Do i still have two vehicles?"
   ?>
 
   </br>
