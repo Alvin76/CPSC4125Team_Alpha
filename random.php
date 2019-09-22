@@ -20,7 +20,7 @@
 
 
   <?php require 'functions.php';
-  footer();
+  echo $websiteURL;
   echo "neet";
   ?>
 
