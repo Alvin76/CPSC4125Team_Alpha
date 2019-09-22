@@ -69,9 +69,9 @@ function nav_bar()
   global $nav_items;
   global $urls;
 
-  for ($x = 1; $x <= sizeof($nav_items) + 1; $x++) {
+  for ($x = 0; $x < sizeof($nav_items) ; $x++) {
   //  $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= /"' . $url[$x] . '">'. $name[$x] .'</a></li>';
-    $nav_bar_menu .=  $urls[$x];
+    $nav_bar_menu .=  $nav_items[$x];
   }
   echo $nav_bar_menu;
 }
