@@ -72,4 +72,3 @@ require 'includes/functions.php';
 
 </body>
 </html>
-?>
