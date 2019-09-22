@@ -7,7 +7,7 @@ header("Pragma: no-cache");
 require 'includes/config.php';
 require 'includes/functions.php';
 
-?>
+
 
 <!DOCTYPE html>
 <html>
@@ -72,3 +72,4 @@ require 'includes/functions.php';
 
 </body>
 </html>
+?>
