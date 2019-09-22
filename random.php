@@ -19,8 +19,8 @@
       <!-- Image and text -->
       <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="#">
-          <img src="/docs/4.1/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-          Bootstrap
+          <img src="/dumpster.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          Git Gud
         </a>
       </nav>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
