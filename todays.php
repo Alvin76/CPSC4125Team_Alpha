@@ -6,7 +6,7 @@
     <?php nav_bar(); ?>
 
     <!-- Page specific content will go down here. -->
-    <?php echo '<p>Hello World</p>'; ?>
+    <?php echo '<p>Todays Comic!</p>'; ?>
     <!-- Page specific content ends here. -->
 
 

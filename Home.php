@@ -6,7 +6,12 @@
     <?php nav_bar(); ?>
 
     <!-- Page specific content will go down here. -->
-    <?php echo '<p>Home Page</p>'; ?>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">This is James Ericsson's Assignment Two.</h1>
+        <p class="lead">Go to the NavBar for either todays comic or a random one.</p>
+      </div>
+    </div>
     <!-- Page specific content ends here. -->
 
 
