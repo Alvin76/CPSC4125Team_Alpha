@@ -38,6 +38,7 @@
   footer();
   echo "</br> Do i still have two vehicles?";
   ?>
+
 <p> bruh </p>
   </br>
 
