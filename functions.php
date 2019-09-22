@@ -43,10 +43,29 @@ function nav_bar()
 {
   global $nav_items, $urls;
 
+  $navbar = '<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="/dumpster.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Git Gud
+      </a>
+    </nav>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">';
+  echo $navbar;
   for ($x = 0; $x < sizeof($nav_items) ; $x++) {
     $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= /' . $urls[$x] . '>'. $nav_items[$x] .'</a></li>';
   }
   echo $nav_bar_menu;
+
+  $closeNavBar = '</ul>
+      </div>
+    </nav>';
+  echo $closeNavBar;
 }
 
 function footer()
