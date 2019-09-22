@@ -19,6 +19,12 @@
   <p> but why ? </p>
 
 
+  <?php require 'functions.php';
+  footer();
+  echo "neet";
+  ?>
+
+<p> bruh </p>
   </br>
 
 
