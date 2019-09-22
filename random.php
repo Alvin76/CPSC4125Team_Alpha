@@ -13,7 +13,11 @@
   echo "I have a $color $car.";
   ?>
 
+  </br>
 
+  <?php require 'menu.php';
+    function vehicle();
+  ?>
 
 
  </body>

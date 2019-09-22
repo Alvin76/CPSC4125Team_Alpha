@@ -5,6 +5,7 @@ $car='BMW';
 
 function vehicle()
 {
-  echo "I have a $color $car.";
+  echo "I have two $color $car.";
 }
+
 ?>
