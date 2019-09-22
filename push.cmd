@@ -1,3 +1,3 @@
 git add .
-git commit -m "testing new feature"
+git commit -m ". $1"
 git push
