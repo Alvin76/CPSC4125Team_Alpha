@@ -47,8 +47,7 @@ function nav_bar2()
   $nav_bar_menu = '';
   $nav_items = config('nav_bar');
   foreach ($nav_items as $uri => $name) {
-    $url = '/' $uri;
-    $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= "' . $url . '">'. $name .'</a></li>';
+    $nav_bar_menu .= '<li class="nav-item"><a class="nav-link" href= "' . $name . '">'. $name .'</a></li>';
     //echo '<li class="nav-item"><a class="nav-link" href="#">'+$name+'</a></li>';
   }
   echo trim($nav_bar_menu);
