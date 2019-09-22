@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-
+<?php require 'functions.php';?>
 
   <head>
     <!-- Required meta tags -->
@@ -9,7 +9,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Required PHP Functions -->
-    <?php require 'functions.php';?>
+
     <title>Team Alpha</title>
   </head>
 
