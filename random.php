@@ -15,9 +15,6 @@
 
   </br>
 
-  <?php require 'menu.php';
-    function vehicle();
-  ?>
 
 
  </body>
