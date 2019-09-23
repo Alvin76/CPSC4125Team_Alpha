@@ -9,7 +9,11 @@ $authors = array('James', 'Adam', 'Taylor', 'Evan');
 $nav_items = array('Home Page', 'Todays Comic', 'Random Comic');
 $urls = array('Home.php', 'todays.php', 'random.php');
 
-
+function noCache(){
+  header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+  header("Cache-Control: post-check=0, pre-check=0", false);
+  header("Pragma: no-cache");
+}
 
 // Sample function for interacting with.
 // Notice the keyword global must be used before the variables can be accessed.
