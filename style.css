@@ -10,3 +10,8 @@ footer {
    height:60px;   /* Height of the footer */
    background-color: gray;
 }
+
+.center {
+  text-align: center;
+  align-content: center;
+}
