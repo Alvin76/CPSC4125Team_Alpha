@@ -79,7 +79,7 @@ function footer()
   $footerclosetag = '</footer>';
   global $websiteURL;
   echo $footertag;
-  echo '<p>The website ' . $websiteURL . 'is By Team Alpha!</p>';
+  echo '<p>The website ' . $websiteURL . 'is By James Ericsson</p>';
   echo $footerclosetag;
 }
 
