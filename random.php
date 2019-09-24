@@ -37,6 +37,10 @@
       //      })
         });
     </script> -->
+
+        <button id="click_button">
+          Welcome to JQuery world.
+        </button>
     <script>
            $('#click_button').bind('click', function () {
              document.getElementById("demo").innerHTML = "should also say hello World";
@@ -45,9 +49,6 @@
     </script>
 
 
-    <button id="click_button">
-      Welcome to JQuery world.
-    </button>
 
 
     <!-- Page specific content ends here. -->
