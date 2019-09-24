@@ -8,8 +8,9 @@
     <?php nav_bar(); ?>
 
     <!-- Page specific content will go down here. -->
-    <?php echo '<p>A Random Comic!</p>'; ?>
-
+    <div class="center">
+      <?php echo '<p>A Random Comic!</p>'; ?>
+    </div>
     <!-- Page specific content ends here. -->
 
 
