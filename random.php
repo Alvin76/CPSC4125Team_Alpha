@@ -42,7 +42,7 @@
           Welcome to JQuery world.
         </button>
     <script>
-           $('#click_button').bind('click', function () {
+           ('#click_button').bind('click', function () {
              document.getElementById("demo").innerHTML = "should also say hello World";
            })
 
