@@ -29,13 +29,18 @@
 
     <!-- https://test-app-ericsson.herokuapp.com/random.php -->
     <p id="demo"></p>
-    <script>
+    <!-- <script>
         $( document ).ready(function(){
           console.log("wut")
     //        $('#click_button').bind('click', function () {
             //  document.getElementById("demo").innerHTML = "should also say hello World";
       //      })
         });
+    </script> -->
+    <script>
+      $( document ).ready(function() {
+        console.log( "ready!" );
+      });
     </script>
     <button id="click_button">
       Welcome to JQuery world.
