@@ -31,9 +31,10 @@
     <p id="demo"></p>
     <script>
         $( document ).ready(function(){
-            $('#click_button').bind('click', function () {
-              document.getElementById("demo").innerHTML = "should also say hello World";
-            })
+          console.log("wut")
+    //        $('#click_button').bind('click', function () {
+            //  document.getElementById("demo").innerHTML = "should also say hello World";
+      //      })
         });
     </script>
     <button id="click_button">
