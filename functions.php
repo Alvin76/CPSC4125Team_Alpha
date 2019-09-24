@@ -92,4 +92,8 @@ function echoRandom(){
   echo getRandom();
 }
 
+// function curler(){
+//
+// }
+
 ?>
