@@ -10,8 +10,6 @@
 
 
     <!-- Page specific content will go down here. -->
-    <?php if(isset($_POST['submit'])) { newComic(); } ?>
-    <?php newComic(); ?>
     <div class="center">
       <?php echo '<p>A Random Comic!</p>'; ?>
       <?php echoRandom(); ?>
