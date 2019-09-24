@@ -27,7 +27,7 @@
     <button onclick="myFunction()">Click me 1</button>
     <button onclick="myFunction2()">Click me 2</button>
 
-
+    <!-- https://test-app-ericsson.herokuapp.com/random.php -->
     <p id="demo"></p>
     <script>
         jQuery(document).ready(function(){
