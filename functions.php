@@ -89,10 +89,6 @@ function getRandom(){
 }
 
 function echoRandom(){
-//  $number = getRandom(0);
-  //echo '<p>The website ' . $number . ' is By James Ericsson</p>';
-//  echo '<p>The website ' . getRandom() . ' is By James Ericsson</p>';
-  echo "test";
   echo getRandom();
 }
 
