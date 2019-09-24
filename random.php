@@ -23,6 +23,28 @@
     <p id="demo"></p>
     <button onclick="myFunction()">Click me</button>
 
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+            // Show an alert popup message.
+            alert('Hello World From JQuery.');
+            // Get the button object by it's id.
+            var button = jQuery('#click_button')
+            // When click this button then execute below function.
+            button.bind('click', function () {
+                // Get button original text.
+                const original_text = jQuery(this).text();
+                // Alert the text.
+                alert('You click the button');
+                alert('The original button text is : ' + original_text);
+                // Set the button new text. And change the button text and background color.
+                jQuery(this).text('Wish you like JQuery :)').css({color:'yellow', background:'blue'});
+            })
+        });
+    </script>
+    <button id="click_button">
+      Welcome to JQuery world.
+    </button>
+
 
     <!-- Page specific content ends here. -->
 
