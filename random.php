@@ -23,7 +23,7 @@
     <p id="demo"></p>
     <button onclick="myFunction()">Click me</button>
 
-    <script type="text/javascript">
+    <script>
         jQuery(document).ready(function(){
             // Show an alert popup message.
             alert('Hello World From JQuery.');
