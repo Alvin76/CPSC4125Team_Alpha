@@ -42,6 +42,8 @@
         console.log( "ready!" );
       });
     </script>
+
+
     <button id="click_button">
       Welcome to JQuery world.
     </button>
