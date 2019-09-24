@@ -96,4 +96,9 @@ function echoRandom(){
 //
 // }
 
+function newComic(){
+  $message = "button pressed";
+  echo "<script type='text/javascript'>alert('$message');</script>";
+}
+
 ?>
