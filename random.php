@@ -10,7 +10,7 @@
     <!-- Page specific content will go down here. -->
     <div class="center">
       <?php echo '<p>A Random Comic!</p>'; ?>
-      <?php getRandom(); ?>
+      <?php echoRandom(); ?>
     </div>
     <!-- Page specific content ends here. -->
 

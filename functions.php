@@ -83,14 +83,17 @@ function footer()
   echo $footerclosetag;
 }
 
-function getRandom($randNumber){
+function getRandom(){
   $randNumber = rand(0,1600);
   return $randNumber;
 }
 
 function echoRandom(){
-  $number = getRandom(0);
-  echo '<p>The website ' . $number . ' is By James Ericsson</p>';
+//  $number = getRandom(0);
+  //echo '<p>The website ' . $number . ' is By James Ericsson</p>';
+//  echo '<p>The website ' . getRandom() . ' is By James Ericsson</p>';
+  echo "test";
+  echo getRandom();
 }
 
 ?>
