@@ -28,9 +28,9 @@
             // Show an alert popup message.
             alert('Hello World From JQuery.');
             // Get the button object by it's id.
-            var button = jQuery('#click_button')
+          //  var button = jQuery('#click_button')
             // When click this button then execute below function.
-            button.bind('click', function () {
+            $('#click_button').bind('click', function () {
                 // Get button original text.
                 const original_text = jQuery(this).text();
                 // Alert the text.
