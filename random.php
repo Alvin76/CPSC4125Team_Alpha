@@ -15,18 +15,24 @@
       <?php echoRandom(); ?>
     </div>
 
-    <!-- <script>
+    <script>
       function myFunction() {
-        document.getElementById("demo").innerHTML = "Hello World";
+        document.getElementById("demo").innerHTML = "Hello World 1";
       }
-    </script> -->
+      function myFunction2() {
+        document.getElementById("demo").innerHTML = "Hello World 2";
+      }
+    </script>
 
-    <!-- <button onclick="myFunction()">Click me</button> -->
+    <button onclick="myFunction()">Click me 1</button>
+    <button onclick="myFunction2()">Click me 2</button>
+
+
     <p id="demo"></p>
     <script>
         jQuery(document).ready(function(){
             $('#click_button').bind('click', function () {
-              document.getElementById("demo").innerHTML = "Hello World";
+              document.getElementById("demo").innerHTML = "should also say hello World";
             })
         });
     </script>
