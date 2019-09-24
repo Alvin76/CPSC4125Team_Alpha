@@ -16,9 +16,7 @@
     </div>
 
     <div class = "testing-button">
-      <form action="<?=$_SERVER['PHP_SELF'];?>" method="post">
-          <input type="button" name="submit" value="Submit">
-      </form>
+
     </div>
     <!-- Page specific content ends here. -->
 
