@@ -20,6 +20,7 @@
         document.getElementById("demo").innerHTML = "Hello World";
       }
     </script>
+    <p id="demo"></p>
     <button onclick="myFunction()">Click me</button>
 
 
