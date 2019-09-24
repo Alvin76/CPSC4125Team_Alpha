@@ -16,7 +16,9 @@
     </div>
 
     <script type="text/javascript">
-
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello World";
+      }
         /*  jQuery function is the entrance function that jQuery execute.
         *
         *   Below code means when the html document load ready, this is similar to window.onload() = function(){......};
@@ -50,9 +52,8 @@
 
         });
     </script>
-    <button id="click_button">
-        Welcome to JQuery world.
-    </button>
+    <button onclick="myFunction()">Click me</button>
+
 
     <!-- Page specific content ends here. -->
 
