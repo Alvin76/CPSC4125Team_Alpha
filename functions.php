@@ -83,12 +83,12 @@ function footer()
   echo $footerclosetag;
 }
 
-function getRandom(){
+function getRandom($randNumber){
   $randNumber = rand(0,1600);
   return $randNumber;
 }
 
 function echoRandom(){
-  echo getRandom();
+  echo getRandom(0);
 }
 ?>
