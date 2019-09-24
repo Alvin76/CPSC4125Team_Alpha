@@ -38,9 +38,10 @@
         });
     </script> -->
     <script>
-      $( document ).ready(function() {
-        console.log( "ready!" );
-      });
+           $('#click_button').bind('click', function () {
+             document.getElementById("demo").innerHTML = "should also say hello World";
+           })
+
     </script>
 
 
