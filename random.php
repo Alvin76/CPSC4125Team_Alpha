@@ -30,7 +30,7 @@
     <!-- https://test-app-ericsson.herokuapp.com/random.php -->
     <p id="demo"></p>
     <script>
-        jQuery(document).ready(function(){
+        $( document ).ready(function(){
             $('#click_button').bind('click', function () {
               document.getElementById("demo").innerHTML = "should also say hello World";
             })
