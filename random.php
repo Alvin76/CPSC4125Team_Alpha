@@ -19,38 +19,6 @@
       function myFunction() {
         document.getElementById("demo").innerHTML = "Hello World";
       }
-        /*  jQuery function is the entrance function that jQuery execute.
-        *
-        *   Below code means when the html document load ready, this is similar to window.onload() = function(){......};
-        *
-        *   You can also use $(document).ready(function(){......}), $ is an alias of jQuery.
-        *
-        *   You can even use $(function(){......}) to process document load ready event.
-        * */
-        jQuery(document).ready(function(){
-
-            // Show an alert popup message.
-            alert('Hello World From JQuery.');
-
-            // Get the button object by it's id.
-          //  var button = jQuery('#click_button')
-
-            // When click this button then execute below function.
-            $('#click_button').bind('click', function () {
-
-                // Get button original text.
-                const original_text = jQuery(this).text();
-
-                // Alert the text.
-                alert('You click the button');
-
-                alert('The original button text is : ' + original_text);
-
-                // Set the button new text. And change the button text and background color.
-                jQuery(this).text('Wish you like JQuery :)').css({color:'yellow', background:'blue'});
-            })
-
-        });
     </script>
     <button onclick="myFunction()">Click me</button>
 
