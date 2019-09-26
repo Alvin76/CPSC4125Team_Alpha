@@ -81,6 +81,10 @@ $response = json_decode($output, true);
 curl_close($handle);
 /*dont change
 */
+
+echo $response['title'].'<br>';
+echo $response['year'].'<br>';
+echo '<img src="'.$response['img']>'" alt="test"/>';
 }
 
 
