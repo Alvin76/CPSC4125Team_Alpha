@@ -44,6 +44,20 @@ function head(){
   echo $head;
 }
 
+function curlFunction(){
+  $handle = curl_init();
+  $url = "http://xkcd.com/info.0.json";
+  // Set the url
+  curl_setopt($handle, CURLOPT_URL, $url);
+  // Set the result output to be a string.
+  curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
+  $output = curl_exec($handle);
+  curl_close($handle);
+  echo $output;
+}
+
+
+
 function nav_bar()
 {
   global $nav_items, $urls;
