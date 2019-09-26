@@ -45,19 +45,23 @@ function head(){
 }
 
 function curlFunction(){
-  $handle = curl_init();
-  $url = "http://xkcd.com/info.0.json";
-  // Set the url
-  curl_setopt($handle, CURLOPT_URL, $url);
-  // Set the result output to be a string.
-  curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
-  $output = curl_exec($handle);
-  curl_close($handle);
-  echo '<p>The website ' . $output . ' is By James Ericsson</p>';
+  // create curl resource
+  $ch = curl_init();
+
+  // set url
+  curl_setopt($ch, CURLOPT_URL, "reddit.com");
+
+  //return the transfer as a string
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+  // $output contains the output string
+  $output = curl_exec($ch);
+
+  // close curl resource to free up system resources
+  curl_close($ch);
+  echo '<p>The website ' . $output . ' is By James Ericss</p>';
   echo $output;
 }
-
-
 
 function nav_bar()
 {
