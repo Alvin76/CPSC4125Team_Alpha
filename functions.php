@@ -84,7 +84,7 @@ curl_close($handle);
 
 echo $response['title'].'<br>';
 echo $response['year'].'<br>';
-echo '<img src="'.$response['img']>'" alt="test"/>';
+echo '<img src="'.$response['img'].'" alt="test"/>';
 }
 
 
