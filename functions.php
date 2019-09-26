@@ -49,7 +49,7 @@ function curlFunction(){
   $ch = curl_init();
 
   // set url
-  curl_setopt($ch, CURLOPT_URL, "reddit.com");
+  curl_setopt($ch, CURLOPT_URL, "https://xkcd.com/info.0.json");
 
   //return the transfer as a string
   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
@@ -65,7 +65,7 @@ function curlFunction(){
 
 
 function getComic(){
-$url = XKCDURL;
+$url = "https://xkcd.com/info.0.json";
 /**dont change
 */
 $handle = curl_init();
