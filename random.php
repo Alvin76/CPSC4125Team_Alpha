@@ -17,7 +17,7 @@
     <!-- Page specific content will go down here. -->
     <div class="center">
       <?php echo '<p>A Random Comic!</p>'; ?>
-      <?php echoRandom(); ?>
+      <?php getRandom(); ?>
       <?php getComic(); ?>
 
     </div>
@@ -52,7 +52,7 @@
 
     <script>
            $('#click_button').bind('click', function () {
-             document.getElementById("demo").innerHTML = <?php echoRandom(); ?>;
+             document.getElementById("demo").innerHTML = <?php getRandom(); ?>;
            })
 
     </script>
