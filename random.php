@@ -52,7 +52,22 @@
 
     <script>
            $('#click_button').bind('click', function () {
-             document.getElementById("todays").innerHTML = <?php getRandomComic(); ?>;
+             //document.getElementById("todays").innerHTML = <?php getRandomComic(); ?>;
+             $.ajax(
+              {
+              type: 'GET',  //whats your request type
+              url: "getRandom.php",  // whats your php file
+              data: {}, //what data are you sending via JSON
+              dataType:"html", // what type of data are you getting back
+              success: function(data)
+              {
+              document.getElementById("todays").innerHTML = data;
+              },
+              error: function()
+              {
+                <?php echo "Somethings Gone Wrong" ?>
+              }
+            }); // Ajax close
            })
     </script>
     <?php footer(); ?>
