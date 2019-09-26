@@ -18,7 +18,7 @@
     <div class="center">
       <?php echo '<p>A Random Comic!</p>'; ?>
       <?php getRandom(); ?>
-
+      <?php getRandomComic(); ?>
     </div>
 
     <script>
