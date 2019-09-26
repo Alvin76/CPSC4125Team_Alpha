@@ -131,13 +131,14 @@ function footer()
 }
 
 function getRandom(){
-  $randNumber = rand(0,1600);
-  return $randNumber;
+  $randNumber = rand(0,2000);
+  echo $randNumber;
+
 }
 
-function echoRandom(){
-  echo getRandom();
-}
+// function echoRandom(){
+//   echo getRandom();
+// }
 
 // function curler(){
 //
