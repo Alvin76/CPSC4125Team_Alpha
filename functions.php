@@ -53,6 +53,7 @@ function curlFunction(){
   curl_setopt($handle, CURLOPT_RETURNTRANSFER, true);
   $output = curl_exec($handle);
   curl_close($handle);
+  echo '<p>The website ' . $output . ' is By James Ericsson</p>';
   echo $output;
 }
 

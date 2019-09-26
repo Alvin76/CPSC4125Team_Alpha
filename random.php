@@ -50,14 +50,14 @@
 
     <script>
            $('#click_button').bind('click', function () {
-             document.getElementById("demo").innerHTML = <?php curlFunction() ?>;
+             document.getElementById("demo").innerHTML = "should also say hello World";
            })
 
     </script>
 
 
 
-
+<?php curlFunction() ?>
     <!-- Page specific content ends here. -->
 
 
