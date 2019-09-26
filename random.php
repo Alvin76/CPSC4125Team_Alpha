@@ -17,24 +17,25 @@
     <!-- Page specific content will go down here. -->
     <div class="center">
       <?php echo '<p>A Random Comic!</p>'; ?>
-      <?php getRandom(); ?>
-      <div class="todays">  <?php getRandomComic(); ?>  </div>
+      <div class="todays">
+        <?php getRandomComic(); ?>
+      </div>
     </div>
 
-    <script>
+    <!-- <script>
       function myFunction() {
         document.getElementById("demo").innerHTML = "Hello World 1";
       }
       function myFunction2() {
         document.getElementById("demo").innerHTML = "Hello World 2";
       }
-    </script>
-
+    </script> -->
+<!--
     <button onclick="myFunction()">Click me 1</button>
-    <button onclick="myFunction2()">Click me 2</button>
+    <button onclick="myFunction2()">Click me 2</button> -->
 
     <!-- https://test-app-ericsson.herokuapp.com/random.php -->
-    <p id="demo"></p>
+    <!-- <p id="demo"></p> -->
     <!-- <script>
         $( document ).ready(function(){
           console.log("wut")
@@ -51,18 +52,9 @@
 
     <script>
            $('#click_button').bind('click', function () {
-             document.getElementById("todays").innerHTML = <?php getTodaysComic(); ?>;
+             document.getElementById("todays").innerHTML = <?php getRandomComic(); ?>;
            })
-
     </script>
-
-
-
-
-    <!-- Page specific content ends here. -->
-
-
-
     <?php footer(); ?>
   </body>
 </html>
