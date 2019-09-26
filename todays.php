@@ -9,6 +9,7 @@
     <!-- Page specific content will go down here. -->
     <div class="center">
       <?php echo '<p>Todays Comic!</p>'; ?>
+      <?php getTodaysComic(); ?>
     </div>
     <!-- Page specific content ends here. -->
 

@@ -64,7 +64,7 @@ function head(){
 // }
 
 
-function getComic(){
+function getTodaysComic(){
 $url = "https://xkcd.com/info.0.json";
 /**dont change
 */
