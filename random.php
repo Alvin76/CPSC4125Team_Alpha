@@ -52,7 +52,7 @@
 
     <script>
            $('#click_button').bind('click', function () {
-             document.getElementById("demo").innerHTML = "should also say hello World";
+             document.getElementById("demo").innerHTML = <?php echoRandom(); ?>;
            })
 
     </script>
