@@ -18,7 +18,7 @@
     <div class="center">
       <?php echo '<p>A Random Comic!</p>'; ?>
       <?php getRandom(); ?>
-      <?php getRandomComic(); ?>
+      <div class="todays">  <?php getRandomComic(); ?>  </div>
     </div>
 
     <script>
@@ -51,7 +51,7 @@
 
     <script>
            $('#click_button').bind('click', function () {
-             document.getElementById("demo").innerHTML = <?php getRandom(); ?>;
+             document.getElementById("todays").innerHTML = <?php getTodaysComic(); ?>;
            })
 
     </script>
