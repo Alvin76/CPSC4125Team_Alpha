@@ -67,7 +67,7 @@
               },
               error: function()
               {
-                <?php echo "Somethings Gone Wrong" ?>
+                console.log("Somethings Gone Wrong");
               }
             }); // Ajax close
            })
