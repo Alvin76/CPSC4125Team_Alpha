@@ -51,7 +51,7 @@
 
 
     <script>
-
+    console.log("neet2");
            $('#click_button').bind('click', function () {
              console.log("neet");
              //document.getElementById("todays").innerHTML = ?php getRandomComic(); ?>;
@@ -72,6 +72,9 @@
             }); // Ajax close
            })
     </script>
+
+
+
     <?php footer(); ?>
   </body>
 </html>
