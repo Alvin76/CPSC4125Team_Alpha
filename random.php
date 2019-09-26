@@ -52,7 +52,7 @@
 
     <script>
            $('#click_button').bind('click', function () {
-             //document.getElementById("todays").innerHTML = <?php getRandomComic(); ?>;
+             //document.getElementById("todays").innerHTML = ?php getRandomComic(); ?>;
              $.ajax(
               {
               type: 'GET',  //whats your request type
