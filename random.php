@@ -51,7 +51,9 @@
 
 
     <script>
+
            $('#click_button').bind('click', function () {
+             console.log("neet");
              //document.getElementById("todays").innerHTML = ?php getRandomComic(); ?>;
              $.ajax(
               {
