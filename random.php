@@ -57,7 +57,9 @@
 
 
 
-<?php curlFunction() ?>
+<?php curlFunction(); ?>
+
+<?php getComic(); ?>
     <!-- Page specific content ends here. -->
 
 
