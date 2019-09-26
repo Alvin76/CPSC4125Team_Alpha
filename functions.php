@@ -44,24 +44,24 @@ function head(){
   echo $head;
 }
 
-function curlFunction(){
-  // create curl resource
-  $ch = curl_init();
-
-  // set url
-  curl_setopt($ch, CURLOPT_URL, "https://xkcd.com/info.0.json");
-
-  //return the transfer as a string
-  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-
-  // $output contains the output string
-  $output = curl_exec($ch);
-
-  // close curl resource to free up system resources
-  curl_close($ch);
-  echo '<p>The website ' . $output . ' is By James Ericss</p>';
-  echo $output;
-}
+// function curlFunction(){
+//   // create curl resource
+//   $ch = curl_init();
+//
+//   // set url
+//   curl_setopt($ch, CURLOPT_URL, "https://xkcd.com/info.0.json");
+//
+//   //return the transfer as a string
+//   curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//
+//   // $output contains the output string
+//   $output = curl_exec($ch);
+//
+//   // close curl resource to free up system resources
+//   curl_close($ch);
+//   echo '<p>The website ' . $output . ' is By James Ericss</p>';
+//   echo $output;
+// }
 
 
 function getComic(){

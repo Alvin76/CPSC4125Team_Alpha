@@ -18,9 +18,8 @@
     <div class="center">
       <?php echo '<p>A Random Comic!</p>'; ?>
       <?php echoRandom(); ?>
-      <?php curlFunction(); ?>
       <?php getComic(); ?>
-      
+
     </div>
 
     <script>
