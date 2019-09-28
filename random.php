@@ -19,7 +19,7 @@
     <!-- Page specific content will go down here. -->
     <div class="center">
       <?php echo '<p>A Random Comic!</p>'; ?>
-      <div class="random">
+      <div id="random">
         <?php getRandomComic(); ?>
       </div>
       <div id="random2"><h2>Let jQuery AJAX Change This Text</h2></div>
