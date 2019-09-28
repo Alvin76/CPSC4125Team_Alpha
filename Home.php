@@ -15,6 +15,7 @@
       <div class="container">
         <h1 class="display-4">This is James Ericsson's Assignment Two.</h1>
         <p class="lead">Go to the NavBar for either todays comic or a random one.</p>
+        <img src="https://pbs.twimg.com/media/CuHcb_HW8AAs7cl.jpg" alt="f">
       </div>
     </div>
     <!-- Page specific content ends here. -->
