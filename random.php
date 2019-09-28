@@ -54,26 +54,41 @@
 
     <script>
     console.log("neet2");
-           $('#click_button').bind('click', function () {
-             console.log("neet");
-             //document.getElementById("todays").innerHTML = ?php getRandomComic(); ?>;
-             $.ajax(
-              {
-              type: 'POST',  //whats your request type
-              url: "getRandom.php",  // whats your php file
-              data: {}, //what data are you sending via JSON
-              dataType:"html", // what type of data are you getting back
-              success: function(data)
-              {
-            //  document.getElementById("todays").innerHTML = data;
-                console.log("very neet")
-              },
-              error: function()
-              {
-                console.log("Somethings Gone Wrong");
-              }
-            }); // Ajax close
-           })
+    $('#click_button').on("click", function(e) {
+      e.preventDefault();
+      $.ajax({type: "POST",
+      url: "getRandom.php",
+      data: {},
+      success:function(result) {
+        alert('ok');
+      },
+      error:function(result) {
+        alert('error');
+      }
+      });
+    });
+
+
+           // $('#click_button').bind('click', function () {
+           //   console.log("neet");
+           //   //document.getElementById("todays").innerHTML = ?php getRandomComic(); ?>;
+           //   $.ajax(
+           //    {
+           //    type: 'POST',  //whats your request type
+           //    url: "getRandom.php",  // whats your php file
+           //    data: {}, //what data are you sending via JSON
+           //    dataType:"html", // what type of data are you getting back
+           //    success: function(data)
+           //    {
+           //  //  document.getElementById("todays").innerHTML = data;
+           //      console.log("very neet")
+           //    },
+           //    error: function()
+           //    {
+           //      console.log("Somethings Gone Wrong");
+           //    }
+           //  }); // Ajax close
+           // })
     </script>
 
 
