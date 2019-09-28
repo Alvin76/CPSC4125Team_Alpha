@@ -18,35 +18,18 @@
 
     <!-- Page specific content will go down here. -->
     <div class="center">
-      <?php echo '<p>A Random Comic!</p>'; ?>
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Random Comic</h1>
+        </div>
+      </div>
       <div id="random">
         <?php getRandomComic(); ?>
       </div>
       <div id="random2"><h2>Let jQuery AJAX Change This Text</h2></div>
     </div>
 
-    <!-- <script>
-      function myFunction() {
-        document.getElementById("demo").innerHTML = "Hello World 1";
-      }
-      function myFunction2() {
-        document.getElementById("demo").innerHTML = "Hello World 2";
-      }
-    </script> -->
-<!--
-    <button onclick="myFunction()">Click me 1</button>
-    <button onclick="myFunction2()">Click me 2</button> -->
-
-    <!-- https://test-app-ericsson.herokuapp.com/random.php -->
-    <!-- <p id="demo"></p> -->
-    <!-- <script>
-        $( document ).ready(function(){
-          console.log("wut")
-    //        $('#click_button').bind('click', function () {
-            //  document.getElementById("demo").innerHTML = "should also say hello World";
-      //      })
-        });
-    </script> -->
 
         <button id="click_button">
           New Comic
