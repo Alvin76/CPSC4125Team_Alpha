@@ -26,7 +26,6 @@
         <?php getRandomComic(); ?>
       </div>
     </div>
-
     <!-- Javascript implementing jQuery and ajax in order to dynamically load content from the getRandom.php page -->
     <script>
       $(document).ready(function(){
