@@ -1,9 +1,8 @@
 body {
- padding-bottom:60px;   /* Height of the footer */
+ /* padding-bottom:60px;   /* Height of the footer */ */
  background-color: #7c7c7d;
 }
 footer {
- padding-top: 30px;
  text-align: center;
  position:relative;
  bottom:0;
