@@ -55,7 +55,9 @@
     <script>
     $(document).ready(function(){
   $("click_button").click(function(){
-    $.ajax({url: "demo_test.txt", success: function(result){
+  //  $.ajax({url: "demo_test.txt", success: function(result){
+    $.ajax({url: "getRandom.php", success: function(result){
+
       $("#div1").html(result);
     }});
   });
