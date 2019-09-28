@@ -60,7 +60,7 @@
 //    $.ajax({url: "demo.txt", success: function(result){
     $.ajax({url: "getRandom.php", success: function(result){
       console.log("Success");
-      $("#random2").html(result);
+      $("#random").html(result);
     }});
   });
 });
