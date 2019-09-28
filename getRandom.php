@@ -1,4 +1,11 @@
-<?php
+<!doctype html>
+<html lang="en">
+  <?php require 'functions.php';?>
+  <?php getRandomComic(); ?>
+  <?php noCache(); ?>
+  </html>
+
+<!-- ?php
 
   $random = rand(1,2100);
   $url = 'https://xkcd.com/'.$random.'/info.0.json';
@@ -24,4 +31,4 @@
   echo '<img src=" '.$response['img'].' " alt="random">';
   }
 
-?>
+?> -->
