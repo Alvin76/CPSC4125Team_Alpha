@@ -59,13 +59,14 @@
              //document.getElementById("todays").innerHTML = ?php getRandomComic(); ?>;
              $.ajax(
               {
-              type: 'GET',  //whats your request type
+              type: 'POST',  //whats your request type
               url: "getRandom.php",  // whats your php file
               data: {}, //what data are you sending via JSON
               dataType:"html", // what type of data are you getting back
               success: function(data)
               {
-              document.getElementById("todays").innerHTML = data;
+            //  document.getElementById("todays").innerHTML = data;
+                console.log("very neet")
               },
               error: function()
               {
