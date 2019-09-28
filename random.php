@@ -57,8 +57,8 @@
     $(document).ready(function(){
   $("#click_button").click(function(){
     console.log("What is going on?");
-    $.ajax({url: "demo.txt", success: function(result){
-//    $.ajax({url: "getRandom.php", success: function(result){
+//    $.ajax({url: "demo.txt", success: function(result){
+    $.ajax({url: "getRandom.php", success: function(result){
       console.log("Success");
       $("#random2").html(result);
     }});
