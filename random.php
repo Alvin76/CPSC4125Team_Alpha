@@ -19,9 +19,10 @@
     <!-- Page specific content will go down here. -->
     <div class="center">
       <?php echo '<p>A Random Comic!</p>'; ?>
-      <div class="todays">
+      <div class="random">
         <?php getRandomComic(); ?>
       </div>
+      <div id="random2"><h2>Let jQuery AJAX Change This Text</h2></div>
     </div>
 
     <!-- <script>
@@ -55,10 +56,10 @@
     <script>
     $(document).ready(function(){
   $("click_button").click(function(){
-  //  $.ajax({url: "demo_test.txt", success: function(result){
-    $.ajax({url: "getRandom.php", success: function(result){
-
-      $("#div1").html(result);
+    $.ajax({url: "demo.txt", success: function(result){
+//    $.ajax({url: "getRandom.php", success: function(result){
+      console.log("Success");
+      $("#random2").html(result);
     }});
   });
 });
