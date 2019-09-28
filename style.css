@@ -17,7 +17,7 @@ html, body {
     height: 100%;
 }
 footer {
-    height: 142px; /* .push must be the same height as .footer */
+    height: 42px; /* .push must be the same height as .footer */
 }
 .wrapper {
     min-height: 100%;
@@ -26,7 +26,7 @@ footer {
     margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
 }
 .push {
-    height: 142px; /* .push must be the same height as .footer */
+    height: 42px; /* .push must be the same height as .footer */
 }
 
 
