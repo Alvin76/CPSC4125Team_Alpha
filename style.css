@@ -1,13 +1,42 @@
-
 footer {
-  padding-top:100px;
-   text-align: center;
-   /* position:absolute; */
-   bottom:0;
-   width:100%;
-   height:60px;   /* Height of the footer */
-   background-color: gray;
+  padding-top: 100px;
+  text-align: center;
+  /* position:absolute; */
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  /* Height of the footer */
+  background-color: gray;
 }
+
+
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+footer {
+    height: 142px; /* .push must be the same height as .footer */
+}
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.push {
+    height: 142px; /* .push must be the same height as .footer */
+}
+
+
+/*
+
+Sticky Footer by Ryan Fait
+http://ryanfait.com/
+
+*/
+
 
 .center {
   text-align: center;
