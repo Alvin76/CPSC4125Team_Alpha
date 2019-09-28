@@ -48,25 +48,32 @@
     </script> -->
 
         <button id="click_button">
-          Welcome to JQuery world.
+          New Comic
         </button>
 
 
     <script>
-    console.log("neet2");
-    $('#click_button').on("click", function(e) {
-      e.preventDefault();
-      $.ajax({type: "POST",
-      url: "getRandom.php",
-      data: {},
-      success:function(result) {
-        alert('ok');
-      },
-      error:function(result) {
-        alert('error');
-      }
-      });
-    });
+    $(document).ready(function(){
+  $("click_button").click(function(){
+    $.ajax({url: "demo_test.txt", success: function(result){
+      $("#div1").html(result);
+    }});
+  });
+});
+    // console.log("neet2");
+    // $('#click_button').on("click", function(e) {
+    //   e.preventDefault();
+    //   $.ajax({type: "POST",
+    //   url: "/getRandom.php",
+    //   data: {},
+    //   success:function(result) {
+    //     alert('ok');
+    //   },
+    //   error:function(result) {
+    //     alert('error');
+    //   }
+    //   });
+    // });
 
 
            // $('#click_button').bind('click', function () {
