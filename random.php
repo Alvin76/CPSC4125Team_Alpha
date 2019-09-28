@@ -10,16 +10,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
   <?php head(); ?>
-
   <body>
-  <div class="wrapper">
     <?php nav_bar(); ?>
 
 
 
 
     <!-- Page specific content will go down here. -->
-
     <div class="center">
 
       <div class="jumbotron jumbotron-fluid">
@@ -31,7 +28,6 @@
       <div id="random">
         <?php getRandomComic(); ?>
       </div>
-      <div id="random2"><h2>Let jQuery AJAX Change This Text</h2></div>
     </div>
 
     <script>
@@ -45,13 +41,11 @@
     }});
   });
 });
+
     </script>
 
 
-  </div>
-  <div class="push"></div>
-  </div>
-    <?php footer(); ?>
 
+    <?php footer(); ?>
   </body>
 </html>
