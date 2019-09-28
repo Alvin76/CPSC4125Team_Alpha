@@ -12,16 +12,13 @@
   <?php head(); ?>
   <body>
     <?php nav_bar(); ?>
-
-
-
-
     <!-- Page specific content will go down here. -->
     <div class="center">
-
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-4">Random Comic</h1>
+          <h1 class="display-4">
+            Random Comic
+          </h1>
           <button id="click_button">Generate New Comic</button>
         </div>
       </div>
@@ -30,22 +27,18 @@
       </div>
     </div>
 
+    <!-- Javascript implementing jQuery and ajax in order to dynamically load content from the getRandom.php page -->
     <script>
-    $(document).ready(function(){
-  $("#click_button").click(function(){
-    console.log("What is going on?");
-//    $.ajax({url: "demo.txt", success: function(result){
-    $.ajax({url: "getRandom.php", success: function(result){
-      console.log("Success");
-      $("#random").html(result);
-    }});
-  });
-});
-
+      $(document).ready(function(){
+      $("#click_button").click(function(){
+        $.ajax({url: "getRandom.php", success: function(result){
+          console.log("Success");
+          $("#random").html(result);
+        }});
+       });
+      });
     </script>
-
-
-
+    <!-- Page specific content ends here. -->
     <?php footer(); ?>
   </body>
 </html>
