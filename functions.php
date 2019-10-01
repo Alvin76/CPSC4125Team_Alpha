@@ -130,7 +130,8 @@ function getOMDBResult(){
   // echo $response['title'].'<br>';
   // echo $response['year'].'<br>';
   // echo '<img src=" '.$response['img'].' " alt="random">';
-  echo $response['Search'];
+  echo "neet";
+//  echo $response['Search'];
 }
 
 function nav_bar()
