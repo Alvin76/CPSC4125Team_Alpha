@@ -13,9 +13,9 @@
     <!-- Page specific content will go down here. -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">This is James Ericsson's Assignment Two.</h1>
-        <p class="lead">Go to the NavBar for either todays comic or a random one.</p>
-        <img src="https://pbs.twimg.com/media/CuHcb_HW8AAs7cl.jpg" alt="f">
+        <h1 class="display-4">This is team Alphas super awesome OMDB API Interfacer.</h1>
+        <p class="lead">Go to the Navbar to look up some movies.</p>
+        <img src="https://cdn3.movieweb.com/i/article/QaFzHJ2eKTk6Vvd14n0J2cBVmfKryN/1107:50/Disney-Plus-Launch-Movie-Tv-Episode-Catalogue.jpg" alt="f">
       </div>
     </div>
     <!-- Page specific content ends here. -->
