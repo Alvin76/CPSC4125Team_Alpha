@@ -16,6 +16,7 @@
         <h1 class="display-4">This is team Alphas awesome page.</h1>
         <p class="lead">Go to the NavBar to reach our search page.</p>
         <p class = "featuredMovie"> Featured Movie </p>
+        <?php getOMDBResult() ?>
         <img src="https://pbs.twimg.com/media/CuHcb_HW8AAs7cl.jpg" alt="f">
       </div>
     </div>
