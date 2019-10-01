@@ -4,7 +4,7 @@
 // Defining global Variables
 $color='red';
 $car='BMW';
-$websiteURL = 'https://test-app-ericsson.herokuapp.com/';
+$websiteURL = 'https://teamalpharules.herokuapp.com';
 $authors = array('James', 'Adam', 'Taylor', 'Evan');
 $nav_items = array('Home Page', 'Todays Comic', 'Random Comic');
 $urls = array('Home.php', 'todays.php', 'random.php');
