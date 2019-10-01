@@ -111,7 +111,27 @@ function getRandomComic(){
 }
 
 
+function getOMDBResult(){
+  url = 'http://omdbapi.com/?apikey=ddbdfa64&s=%27iron%20man%27';
+  $handle = curl_init();
+  curl_setopt($handle, CURLOPT_URL, $url);
+  curl_setopt_array($handle,
+  array(
+  CURLOPT_URL => $url,
+  CURLOPT_RETURNTRANSFER => true
+  )
+  );
+  $output = curl_exec($handle);
+  $response = json_decode($output, true);
+  curl_close($handle);
+  /*dont change
+  */
 
+  // echo $response['title'].'<br>';
+  // echo $response['year'].'<br>';
+  // echo '<img src=" '.$response['img'].' " alt="random">';
+  echo $response['Search'];
+}
 
 function nav_bar()
 {
@@ -157,6 +177,9 @@ function getRandom(){
   echo $randNumber;
 
 }
+
+
+
 
 // function echoRandom(){
 //   echo getRandom();
