@@ -152,7 +152,7 @@ function nav_bar()
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="/pictures/alpaca.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="alpaca.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Evan Jones 2
       </a>
     </nav>
