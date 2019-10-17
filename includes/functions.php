@@ -148,12 +148,11 @@ function nav_bar()
 {
   global $nav_items, $urls;
 
-  $navbar = '<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  $navbar = '<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7c7c7d;">
     <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
         <img src="pictures/alpaca.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Evan Jones 2
+        Alpha Alpacas
       </a>
     </nav>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
