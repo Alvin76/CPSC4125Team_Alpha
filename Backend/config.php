@@ -24,8 +24,8 @@ function config($key = '')
           'random-comic' => 'Random Comic',
           'todays-comic' => 'Todays Comic'
         ],
-        'template_path' => 'template',
-        'content_path' => 'content',
+        'template_path' => 'CSS',
+        'content_path' => 'Webpages',
         'version' => 'v3.0',
     ];
     return isset($config[$key]) ? $config[$key] : null;
