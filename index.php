@@ -6,5 +6,4 @@
 
 require 'Backend/config.php';
 require 'Backend/functions.php';
-
-init();
+;
