@@ -11,12 +11,7 @@ function config($key = '')
         'name' => 'Evan: Assignment 2',
         'XKCDURL' => 'http://xkcd.com/info.0.json',
         'pretty_uri' => false,
-        'site_url' => 'https://evanjoneswebplay.herokuapp.com',
-        'nav_menu' => [
-            '' => 'Home',
-            'about-me' => 'About Me',
-            'cross-training' => 'Cross Training'
-        ],
+        'site_url' => 'https://evanjoneswebplay.herokuapp.com'
         'nav_bar' => [
           '' => 'Home',
           'about-me'      => "About Me",
