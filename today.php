@@ -7,13 +7,12 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <?php head(); ?>
   <body>
-  <?php nav_bar(); ?>
-
+    <?php nav_bar(); ?>
     <div class="center">
-      <?php echo '<p>Random Comic</p>'; ?>
-      <?php getRandomComic(); ?>
+          <?php echo "<p>Today's Comic</p>"; ?>
+          <?php getTodaysComic(); ?>
+        </div>
 
-    </div>
-    <?php footer(); ?>
-  </body>
-</html>
+        <?php footer(); ?>
+      </body>
+    </html>
