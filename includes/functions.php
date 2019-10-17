@@ -150,7 +150,7 @@ function nav_bar()
 
   $navbar = '<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7c7c7d;">
     <!-- Image and text -->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7c7c7d;">
+    <nav class="navbar navbar-light" style="background-color: #7c7c7d;
       <a class="navbar-brand" href="#">
         <img src="pictures/alpaca.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Alpha Alpacas
