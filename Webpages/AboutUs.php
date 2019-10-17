@@ -13,4 +13,9 @@
 
   <body>
     <?php nav_bar(); ?>
-    <article>Welcome to our OMDB search website. </article>
+    <main>
+     <article>Welcome to our OMDB search website. </article>
+     <img src='CPSC4125Team_Alpha\Images\alpaca-stare' alt='photo of me' />
+
+
+    </main>
