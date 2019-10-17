@@ -148,7 +148,7 @@ function nav_bar()
 {
   global $nav_items, $urls;
 
-  $navbar = '<nav class="navbar navbar-expand-lg navbar-dark style="background-color: #130027;">
+  $navbar = '<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
