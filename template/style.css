@@ -1,0 +1,17 @@
+body {
+   padding-bottom:60px;   /* Height of the footer */
+   background-color: #7c7c7d;
+}
+footer {
+   text-align: center;
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+   background-color: gray;
+}
+
+.center {
+  text-align: center;
+  align-content: center;
+}
