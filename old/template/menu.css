@@ -1,0 +1,96 @@
+table{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+table td{
+  padding-right: 5px;
+  padding-left:  5px;
+}
+table caption{
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+}
+th.Subsection{
+  border-bottom-color: red;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  font-size: 1.2em;
+  padding-top: 10px;
+}
+
+.subCap{
+  text-align: center;
+  font-size: 1.3em;
+  font-style: italic;
+}
+br{
+  margin-top: 30px;
+}
+
+span{
+  font-size: 0.4em
+
+}
+
+#raw{
+  text-align: center;
+}
+
+table#Kids td{
+  padding-left: 20px;
+}
+
+table#Desserts td{
+  padding-left: 10px;
+}
+
+
+table{
+  background: rgba(0, 0, 0, 0.7);
+}
+#NavMenu{
+ margin-left: auto;
+ margin-right: auto;
+ padding-left: 0px;
+ padding-right: 0px;
+}
+#NavMenu>ul>li{
+
+
+}
+button{
+  border: none;
+  text-decoration: underline;
+  background-color: inherit;
+  /*padding: 14px 28px;*/
+  font-size: 19px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/*table#Drinks{
+  text-align: left;
+}
+/* make a divider in HTML to set lines up
+table#Drinks th{
+  padding-left: 20px;
+  border-left: 1px;
+  border-color: red;
+  border-right-style: dashed;
+  border-width: 3px;
+}
+table#Drinks td{
+  padding-left: 20px;
+  border-left: 1px;
+  border-color: red;
+  border-right-style: dashed;
+  border-width: 3px;
+}
+*/
+#raw{
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+}
