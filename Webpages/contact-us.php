@@ -15,10 +15,8 @@
   </head>
 
   <body>
-    <header>
-
-    </header>
         <?php nav_bar(); ?>
+        <?php search_bar(): ?>
     <main>
       <h1>Contact-us </h1>
       <p>You can email us at <a href= "mailto:abc@example.com">Send Email</a> </p>
