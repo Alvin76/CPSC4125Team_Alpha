@@ -19,7 +19,7 @@
 
           <input id="search" type="text" placeholder="Type Movie Here">
           <button id="click_button">Search</button>
-          <div class="ComicImage">
+          <div id="ComicImage">
             Comic
           </div>
           <script>
