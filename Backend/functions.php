@@ -170,6 +170,6 @@ function testgetMovies($search){
 
 function getMovies($search){
   echo "<p>woooooooooooooow</p>";
-  echo $search
+  echo "'.$search.'";
 }
 ?>
