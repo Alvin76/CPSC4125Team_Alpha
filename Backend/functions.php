@@ -4,7 +4,7 @@
 // Defining global Variables
 $color='red';
 $car='BMW';
-$websiteURL = 'https://test-app-ericsson.herokuapp.com/';
+$websiteURL = 'https://team-alpha-web-site.herokuapp.com';
 $authors = array('Adam_Daves' , 'James_Ericsson','','');
 $nav_items = array('Home Page', 'About Us', 'Contact Us', 'Results');
 $urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php','Webpages/results.php');
@@ -125,7 +125,7 @@ function footer()
   $footerclosetag = '</footer>';
   global $websiteURL;
   echo $footertag;
-  echo '<p>The website ' . $websiteURL . ' is By James Ericsson</p>';
+  echo '<p>The website ' . $websiteURL . ' is By Team Alpha</p>';
   echo $footerclosetag;
 }
 
