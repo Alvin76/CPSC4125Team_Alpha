@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html lang="en">
   <?php require '../Backend/functions.php';?>
   <!-- Optional JavaScript -->
@@ -9,14 +10,29 @@
   <?php head(); ?>
   <body>
     <?php nav_bar(); ?>
-
     <!-- Page specific content will go down here. -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">This is team Alphas super awesome OMDB API Interfacer.</h1>
         <p class="lead">Go to the Navbar to look up some movies.</p>
         <div class="Comic Image">
-          Comic Here
+          <input id="search" type="text" placeholder="Type here">
+          <input id="submit" type="submit" value="Search">
+          <script>
+            $(document).ready(function(){
+            $("#submit").click(function(){
+              $.ajax({
+                url: "get.php",
+                data: {'random' : true},
+                dataType:"HTML",
+                success: function(data){
+                console.log("Success");
+                $("#random").html(data);
+              }});
+             });
+            });
+          </script>
+          <?php getComic(); ?>
         </div>
       </div>
     </div>
