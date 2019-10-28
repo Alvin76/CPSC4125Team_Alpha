@@ -16,7 +16,7 @@
         <h1 class="display-4">This is team Alphas super awesome OMDB API Interfacer.</h1>
         <p class="lead">Go to the Navbar to look up some movies.</p>
         <div class="Comic Image">
-          <input id="search" type="text" placeholder="Type here">
+          <input id="search" type="text" placeholder="Type Movie Here">
           <input id="submit" type="submit" value="Search">
           <script>
             $(document).ready(function(){
