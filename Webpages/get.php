@@ -1,6 +1,7 @@
-<?php
-if(isset($_POST['random'])) {
-    testgetMovies("Pass");
-} else {
-    testgetMovies("fail");
-};
+<!doctype html>
+<html lang="en">
+  <?php require 'functions.php';?>
+  <?php noCache(); ?>
+  <?php testgetMovies("neet"); ?>
+  <p>woooooooooooooow</p>
+</html>

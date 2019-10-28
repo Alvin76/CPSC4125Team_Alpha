@@ -15,25 +15,24 @@
       <div class="container">
         <h1 class="display-4">This is team Alphas super awesome OMDB API Interfacer.</h1>
         <p class="lead">Go to the Navbar to look up some movies.</p>
-        <div class="Comic Image">
+
           <input id="search" type="text" placeholder="Type Movie Here">
           <input id="submit" type="submit" value="Search">
+          <div class="ComicImage">
+            Comic
+          </div>
           <script>
-            $(document).ready(function(){
-            $("#submit").click(function(){
-              $.ajax({
-                url: "get.php",
-                data: {'random' : true},
-                dataType:"HTML",
-                success: function(data){
-                console.log("Success");
-                $("#random").html(data);
-              }});
-             });
-            });
-          </script>
+              $(document).ready(function(){
+              $("#click_button").click(function(){
+                $.ajax({url: "get.php", success: function(result){
+                  console.log("Success");
+                  $("#ComicImage").html(result);
+                }});
+               });
+              });
+            </script>
           <?php getComic(); ?>
-        </div>
+
       </div>
     </div>
     <!-- Page specific content ends here. -->
