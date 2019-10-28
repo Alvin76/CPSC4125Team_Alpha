@@ -15,7 +15,7 @@
     <?php nav_bar(); ?>
     <main>
      <article>Welcome to our OMDB search website. </article>
-     <img src='CPSC4125Team_Alpha\Images\alpaca-stare' alt='photo of me' />
+     <img src='../Images/alpaca-stare.jpg' alt='photo of me' />
 
 
     </main>
