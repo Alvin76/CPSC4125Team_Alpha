@@ -16,6 +16,9 @@
     <main>
      <article>Welcome to our OMDB search website. </article>
      <img src='../Images/alpaca-stare.jpg' alt='photo of me' />
-
-
     </main>
+
+  </body
+    <?php footer(); ?>
+  </body>
+</html>
