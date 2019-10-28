@@ -17,7 +17,7 @@
         <p class="lead">Go to the Navbar to look up some movies.</p>
         <div class="Comic Image">
           <input id="search" type="text" placeholder="Type here">
-          c<input id="submit" type="submit" value="Search">
+          <input id="submit" type="submit" value="Search">
           <script>
             $(document).ready(function(){
             $("#submit").click(function(){
