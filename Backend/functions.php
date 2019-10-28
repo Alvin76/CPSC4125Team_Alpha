@@ -140,7 +140,7 @@ function newComic(){
   echo "<script type='text/javascript'>alert('$message');</script>";
 }
 
-function getComic(){
+function getIronMan(){
   $url = "http://omdbapi.com/?apikey=ddbdfa64&s=%27iron%20man%27";
   $handle = curl_init();
   curl_setopt($handle, CURLOPT_URL, $url);
@@ -166,5 +166,9 @@ function getComic(){
 
 function testgetMovies($search){
     console.log("WOW");
+}
+
+function getMovies(){
+  echo "<p>woooooooooooooow</p>";
 }
 ?>

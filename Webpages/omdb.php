@@ -32,7 +32,7 @@
                });
               });
             </script>
-          <?php getComic(); ?>
+          <!-- ?php getIronMan(); ?> -->
 
       </div>
     </div>
