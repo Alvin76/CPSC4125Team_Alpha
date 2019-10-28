@@ -2,5 +2,5 @@
 <html lang="en">
   <?php require '../Backend/functions.php';?>
   <?php noCache(); ?>
-  <?php getMovies(); ?>
+  <?php getMovies(search); ?>
 </html>

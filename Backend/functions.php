@@ -168,7 +168,8 @@ function testgetMovies($search){
     console.log("WOW");
 }
 
-function getMovies(){
+function getMovies($search){
   echo "<p>woooooooooooooow</p>";
+  echo $search
 }
 ?>

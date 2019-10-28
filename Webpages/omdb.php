@@ -25,7 +25,9 @@
           <script>
               $(document).ready(function(){
               $("#click_button").click(function(){
-                $.ajax({url: "get.php", success: function(result){
+                $.ajax({url: "get.php", data: {
+                      search: "Test Search"
+                  }, success: function(result){
                   console.log("Success");
                   $("#ComicImage").html(result);
                 }});
