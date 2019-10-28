@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <?php require 'functions.php';?>
+  <?php require '../Backend/functions.php';?>
   <?php noCache(); ?>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
