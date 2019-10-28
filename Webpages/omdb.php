@@ -17,7 +17,7 @@
         <p class="lead">Go to the Navbar to look up some movies.</p>
 
           <input id="search" type="text" placeholder="Type Movie Here">
-          <input id="submit" type="submit" value="Search">
+          <button id="click_button">Search</button>
           <div class="ComicImage">
             Comic
           </div>
