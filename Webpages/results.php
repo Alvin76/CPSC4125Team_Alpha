@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-  <?php require 'functions.php';?>
+  <?php require '../Backend/functions.php';?>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -15,14 +15,9 @@
       <div class="container">
         <h1 class="display-4">This is team Alphas super awesome OMDB API Interfacer.</h1>
         <p class="lead">Go to the Navbar to look up some movies.</p>
-        <img src="https://cdn3.movieweb.com/i/article/QaFzHJ2eKTk6Vvd14n0J2cBVmfKryN/1107:50/Disney-Plus-Launch-Movie-Tv-Episode-Catalogue.jpg" alt="f">
       </div>
     </div>
     <!-- Page specific content ends here. -->
-
-
-
-
     <?php footer(); ?>
   </body>
 </html>
