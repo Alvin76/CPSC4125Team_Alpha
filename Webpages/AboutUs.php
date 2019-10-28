@@ -14,8 +14,10 @@
   <body>
     <?php nav_bar(); ?>
     <main>
-     <article>Welcome to our OMDB search website. </article>
-     <img src='../Images/alpaca-stare.jpg' alt='photo of me' />
+      <div class="text-center">
+        <article>Welcome to our OMDB search website. </article>
+        <img src='../Images/alpaca-stare.jpg' alt='photo of me' />
+      </div>
     </main>
 
   </body
