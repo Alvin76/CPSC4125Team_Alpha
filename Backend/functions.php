@@ -6,8 +6,8 @@ $color='red';
 $car='BMW';
 $websiteURL = 'https://team-alpha-web-site.herokuapp.com';
 $authors = array('Adam_Daves' , 'James_Ericsson','','');
-$nav_items = array('Home Page', 'About Us', 'Contact Us', 'Results');
-$urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php','Webpages/results.php');
+$nav_items = array('Home Page', 'About Us', 'Contact Us', 'Results', 'OMDB Search');
+$urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php','Webpages/results.php', 'Webpages/omdb.php');
 
 function noCache(){
   header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
