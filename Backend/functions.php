@@ -6,8 +6,8 @@ $color='red';
 $car='BMW';
 $websiteURL = 'https://test-app-ericsson.herokuapp.com/';
 $authors = array('Adam_Daves' , 'James_Ericsson','','');
-$nav_items = array('Home Page', 'Todays Comic', 'Random Comic', 'OMDB Search');
-$urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contact-us.php','Webpages/results.php', 'Webpages/omdb.php');
+$nav_items = array('Home Page', 'About Us', 'Contact Us', 'Results');
+$urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php','Webpages/results.php');
 
 function noCache(){
   header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");

@@ -11,7 +11,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Contact-us</title>
+    <title>Contact Us</title>
   </head>
 
   <body>
