@@ -165,6 +165,6 @@ function getComic(){
 }
 
 function testgetMovies($search){
-    echo "<script type='text/javascript'>alert('$search');</script>";
+    console.log("WOW");
 }
 ?>
