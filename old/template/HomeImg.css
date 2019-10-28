@@ -1,0 +1,14 @@
+img{
+
+  padding: 5px;
+  max-width: 750px;
+  width: 95%;
+
+}
+.ImgAline{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.boxT{
+  min-width: 300px;
+}

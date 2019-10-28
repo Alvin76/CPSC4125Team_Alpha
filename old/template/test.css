@@ -1,0 +1,11 @@
+*{
+  text-align: center;
+  border-style: dashed;
+  font-size: 30px;
+}
+table{
+  padding-top: 200px;
+  padding-left: 200px;
+  word-wrap: break-word;
+
+}
