@@ -17,6 +17,7 @@
         <p class="lead">Go to the Navbar to look up some movies.</p>
         <img src="4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
         <div class="container">
+          <h2> Adam Davies <h2>
           <img src="alpacaAdam.jpg" alt="alpacaAdam">
         </div>
       </div>
