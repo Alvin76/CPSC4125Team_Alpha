@@ -9,7 +9,7 @@
   <?php getMovies("fail"); ?>
   <p> "wut"</p>
   <?php getMovies($search); ?>
-  <p> "wut"</p>
-    <!-- ?php $search2 = $_POST['search']; ?> -->
+  <p> "wut2"</p>
+  <?php $search2 = $_POST['search']; ?>
   <?php getMovies($search2); ?>
 </html>
