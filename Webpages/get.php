@@ -6,4 +6,11 @@
     echo "fail";
   };
    -->
-<?php echo "hi" ?>
+<?php echo "hi";
+
+if(isset($_POST['search'])) {
+ echo "success";
+} else {
+ echo "fail";
+};
+ ?>
