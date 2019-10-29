@@ -6,5 +6,4 @@
     echo "fail";
   };
    -->
-
-   hi
+<?php echo "hi" ?>
