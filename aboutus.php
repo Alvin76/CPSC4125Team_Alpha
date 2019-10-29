@@ -22,11 +22,11 @@
         </div>
         <div class="container">
           <h2> Taylor Woods <h2>
-        </div>    
+        </div>
       </div>
     </div>
     <!-- Page specific content ends here. -->
 
-    <?php footer(); ?>
+    //<?php footer(); ?>
   </body>
 </html>
