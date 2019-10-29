@@ -2,11 +2,11 @@
 <html lang="en">
   <?php require '../Backend/functions.php';?>
   <?php noCache(); ?>
-  <?php getMovies("test"); ?>
+  <?php getMovies("fail"); ?>
   <p> "wut"</p>
   <?php getMovies(search); ?>
   <p> "wut"</p>
-  <?php getMovies("search"); ?>
+  <?php getMovies("fail"); ?>
   <p> "wut"</p>
   <?php getMovies($search); ?>
   <p> "wut"</p>
