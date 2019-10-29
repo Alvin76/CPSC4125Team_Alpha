@@ -6,8 +6,8 @@ $color='red';
 $car='BMW';
 $websiteURL = 'https://test-app-ericsson.herokuapp.com/';
 $authors = array('James_Ericsson');
-$nav_items = array('Home Page', 'Todays Comic', 'Random Comic', 'About Us');
-$urls = array('Home.php', 'todays.php', 'random.php', 'aboutus.php');
+$nav_items = array('Home Page','About Us');
+$urls = array('Home.php', 'aboutus.php');
 
 function noCache(){
   header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
@@ -34,7 +34,7 @@ function head(){
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Required PHP Functions -->
 
-    <title>James Ericsson</title>
+    <title>Movie Search</title>
   </head>';
   echo $head;
 }
