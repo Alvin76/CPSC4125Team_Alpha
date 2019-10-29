@@ -6,8 +6,8 @@ $color='red';
 $car='BMW';
 $websiteURL = 'https://team-alpha-web-site.herokuapp.com';
 $authors = array('Adam_Daves' , 'James_Ericsson','','');
-$nav_items = array('Home Page', 'About Us', 'Contact Us', 'Results', 'OMDB Search');
-$urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php','Webpages/results.php', 'Webpages/omdb.php');
+$nav_items = array('Home Page', 'About Us', 'Contact Us', 'OMDB Search');
+$urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php', 'Webpages/omdb.php');
 
 function noCache(){
   header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
@@ -98,7 +98,7 @@ function nav_bar()
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="/dumpster.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="Images/dumpster.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Git Gud
       </a>
     </nav>
