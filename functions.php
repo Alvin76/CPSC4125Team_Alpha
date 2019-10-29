@@ -125,7 +125,7 @@ function footer()
   $footerclosetag = '</footer>';
   global $websiteURL;
   echo $footertag;
-  echo '<p>The website ' . $websiteURL . ' is Taylor Woods, Adam Davies, Evan,  By James Ericsson</p>';
+  echo '<p>The website ' . $websiteURL . ' is By Taylor Woods, Adam Davies, Evan, James Ericsson</p>';
   echo $footerclosetag;
 }
 

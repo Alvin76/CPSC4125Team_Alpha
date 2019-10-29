@@ -15,8 +15,8 @@
       <div class="container">
         <h1 class="display-4">Thanks for visiting team Alpaca. Meet the team below.</h1>
         <p class="lead">Go to the Navbar to look up some movies.</p>
-        <img src="4alpacas.jpg" alt="Four Alpacas">
-
+        <img src="4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
+        <img src="alpacaAdam.jpg" alt="alpacaAdam">
       </div>
     </div>
     <!-- Page specific content ends here. -->
