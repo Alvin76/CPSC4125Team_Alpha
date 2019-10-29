@@ -18,8 +18,11 @@
         <img src="4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
         <div class="container">
           <h2> Adam Davies <h2>
-          <img src="alpacaAdam.jpg" alt="alpacaAdam">
+          <img src="alpacaAdam.jpg" alt="alpacaAdam" class="img-fluid">
         </div>
+        <div class="container">
+          <h2> Taylor Woods <h2>
+        </div>    
       </div>
     </div>
     <!-- Page specific content ends here. -->
