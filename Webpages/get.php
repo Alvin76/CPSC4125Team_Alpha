@@ -6,8 +6,7 @@
     echo "fail";
   };
    -->
-<?php echo "hi";
-
+<?php
 if(isset($_POST['search'])) {
  echo $_POST['search'];
 } else {
