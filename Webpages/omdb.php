@@ -20,7 +20,7 @@
           <input id="search" type="text" placeholder="Type Movie Here">
           <button id="click_button">Search</button>
           <div id="ComicImage">
-            Comic
+            Iron Men
           </div>
           <script>
               $(document).ready(function(){
