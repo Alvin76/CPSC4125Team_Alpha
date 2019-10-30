@@ -59,9 +59,35 @@ curl_close($handle);
 /*dont change
 */
 
+
+
 echo $response['Title'].'<br>';
 echo $response['Year'].'<br>';
 echo '<img src=" '.$response['Img'].' " alt="test">';
+}
+
+function getIronMan(){
+  $url = "http://omdbapi.com/?apikey=ddbdfa64&s=%27iron%20man%27";
+  $handle = curl_init();
+  curl_setopt($handle, CURLOPT_URL, $url);
+  curl_setopt_array($handle,
+  array(
+  CURLOPT_URL => $url,
+  CURLOPT_RETURNTRANSFER => true
+  )
+  );
+  $output = curl_exec($handle);
+  $response = json_decode($output, true);
+  curl_close($handle);
+  $NumberOfElements = count($response['Search']);
+//  echo $NumberOfElements;
+  for ($x = 0; $x <= $NumberOfElements ; $x++) {
+    echo '<br>'.$response['Search'][$x]["Title"].'<br>';
+    $imageURL = $response['Search'][$x]['Poster'];
+  //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
+  //  echo $response['Search'][$x]['Poster']
+  echo '<img src=" '.$imageURL.' " alt="ironmen">';
+  }
 }
 
 function getRandomComic(){
