@@ -13,9 +13,9 @@
     <!-- Page specific content will go down here. -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
-        <h1 class="display-4">Thanks for visiing. Please do contact us using the information below.</h1>
-        <p class="lead">Go to the Navbar to look up some movies.</p>
-
+        <h1 class="display-4">Thanks for visitng. Please do contact us using the information below.</h1>
+        <p>Phone: 555-555-5555</p>
+        <p>Email: noreply@gmail.com</p>
       </div>
     </div>
     <!-- Page specific content ends here. -->
