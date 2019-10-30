@@ -9,6 +9,7 @@
   <?php head(); ?>
   <body>
     <?php nav_bar(); ?>
+    <?php get_Todays_Comic(); ?>
 
     <!-- Page specific content will go down here. -->
     <div class="jumbotron jumbotron-fluid">
