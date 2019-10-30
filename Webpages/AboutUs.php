@@ -36,7 +36,7 @@
       <img src="images/alpacaEvan.jpeg" alt="alpacaEvan" class="img-fluid">
     </div>
     <div class="container">
-      <h2> Jame Erricson <h2>
+      <h2> James Ericsson <h2>
       <img src="images/alpacaJames.jpeg" alt="alpacaJames" class="img-fluid">
     </div>
         </main>
