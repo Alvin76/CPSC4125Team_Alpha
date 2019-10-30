@@ -11,7 +11,7 @@ require '../Backend/functions.php';
 
 if(isset($_POST['search'])) {
   $testingGoal = $_POST['search'];
- testgetMovies($testingGoal);
+ echo testgetMovies($testingGoal);
 } else {
  echo "fail";
 };
