@@ -10,8 +10,9 @@
 
 if(isset($_POST['search'])) {
  echo "success";
+ getMovies($_POST['search']);
 } else {
  echo "fail";
- getMovies($_POST['search']);
+
 };
  ?>
