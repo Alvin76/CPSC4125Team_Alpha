@@ -25,7 +25,7 @@
     </div>
     <div class="container">
       <h2> Adam Davies <h2>
-      <img src="images/alpacaAdam.jpg" alt="alpacaAdam" class="img-fluid">
+      <img src="../Images/alpacaAdam.jpg" alt="alpacaAdam" class="img-fluid">
     </div>
     <div class="container">
       <h2> Taylor Woods <h2>
