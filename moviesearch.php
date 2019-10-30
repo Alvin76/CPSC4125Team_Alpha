@@ -14,6 +14,7 @@
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <h1 class="display-4">Search for a movie here</h1>
+        <?php get_Todays_Comic(); ?>
 
 
       </div>
