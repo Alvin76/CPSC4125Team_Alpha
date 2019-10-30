@@ -14,3 +14,7 @@ footer {
 text-align: center;
 align-content: center;
 }
+
+.largeText{
+  font-size: large;
+}
