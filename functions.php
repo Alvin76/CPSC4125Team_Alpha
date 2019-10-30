@@ -42,7 +42,7 @@ function head(){
 
 
 function getTodaysComic(){
-$url = "https://xkcd.com/info.0.json";
+$url = "http://www.omdbapi.com/?t=iron+man";
 /**dont change
 */
 $handle = curl_init();
