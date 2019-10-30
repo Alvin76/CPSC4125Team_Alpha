@@ -15,18 +15,30 @@
       <div class="container">
         <h1 class="display-4">Thanks for visiting team Alpaca. Meet the team below.</h1>
         <p class="lead">Go to the Navbar to look up some movies.</p>
-        <img src="4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
+        <div class="container">
+          <h2> The Group <h2>
+          <img src="4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
+        </div>
         <div class="container">
           <h2> Adam Davies <h2>
           <img src="alpacaAdam.jpg" alt="alpacaAdam" class="img-fluid">
         </div>
         <div class="container">
           <h2> Taylor Woods <h2>
+          <img src="alpacaTaylor.jpg" alt="alpacaTaylor" class="img-fluid">
+        </div>
+        <div class="container">
+          <h2> Evan <h2>
+          <img src="alpacaEvan.jpg" alt="alpacaEvan" class="img-fluid">
+        </div>
+        <div class="container">
+          <h2> Jame Erricson <h2>
+          <img src="alpacaJames.jpg" alt="alpacaJames" class="img-fluid">
         </div>
       </div>
     </div>
     <!-- Page specific content ends here. -->
 
-    
+
   </body>
 </html>
