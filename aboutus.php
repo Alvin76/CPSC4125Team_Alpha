@@ -27,6 +27,6 @@
     </div>
     <!-- Page specific content ends here. -->
 
-    //<?php footer(); ?>
+    #/*<?php footer(); ?>*/
   </body>
 </html>
