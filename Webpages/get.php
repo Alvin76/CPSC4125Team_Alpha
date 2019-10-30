@@ -7,7 +7,7 @@
   };
    -->
 <?php
-php require '../Backend/functions.php';
+require '../Backend/functions.php';
 
 if(isset($_POST['search'])) {
  echo $_POST['search'];
