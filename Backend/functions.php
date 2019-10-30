@@ -168,6 +168,6 @@ function getIronMan(){
 
 function testgetMovies($search){
     console.log("WOW");
-    echo "gr"
+    echo "gr";
 }
 ?>
