@@ -27,7 +27,7 @@
               $(document).ready(function(){
               $("#click_button").click(function(){
                 $.ajax({type: 'post', url: "get.php", data: {
-                  search: userSearch
+                  search: document.getElementById("search").value
                   }, success: function(result){
                   console.log("Success");
                   $("#ComicImage").html(result);
