@@ -59,9 +59,9 @@ curl_close($handle);
 /*dont change
 */
 
-echo $response['title'].'<br>';
-echo $response['year'].'<br>';
-echo '<img src=" '.$response['img'].' " alt="test">';
+echo $response['Title'].'<br>';
+echo $response['Year'].'<br>';
+echo '<img src=" '.$response['Img'].' " alt="test">';
 }
 
 function getRandomComic(){
