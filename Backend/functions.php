@@ -168,7 +168,7 @@ function getIronMan(){
 
 function testgetMovies($search){
   $url = 'http://omdbapi.com/?apikey=ddbdfa64&s=%27' + $search;
-  echo $url;
+  echo gettype($search);
   echo $search;
   $handle = curl_init();
   curl_setopt($handle, CURLOPT_URL, $url);
