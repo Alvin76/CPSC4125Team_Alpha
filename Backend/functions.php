@@ -30,7 +30,7 @@ function head(){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS -->
-    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Required PHP Functions -->
 
@@ -98,7 +98,7 @@ function nav_bar()
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="/dumpster.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="../Images/dumpster.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Git Gud
       </a>
     </nav>

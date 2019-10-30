@@ -9,9 +9,8 @@
 <?php echo "hi";
 
 if(isset($_POST['search'])) {
- echo "success";
+ echo $_POST['search'];
 } else {
  echo "fail";
-
 };
  ?>
