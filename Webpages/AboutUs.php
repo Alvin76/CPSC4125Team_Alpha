@@ -21,7 +21,7 @@
           </div>
           <div class="container">
       <h2> The Group <h2>
-      <img src="images/4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
+      <img src="../Images/4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
     </div>
     <div class="container">
       <h2> Adam Davies <h2>
@@ -29,15 +29,15 @@
     </div>
     <div class="container">
       <h2> Taylor Woods <h2>
-      <img src="images/alpacaTaylor.jpeg" alt="alpacaTaylor" class="img-fluid">
+      <img src="../Images/alpacaTaylor.jpeg" alt="alpacaTaylor" class="img-fluid">
     </div>
     <div class="container">
       <h2> Evan <h2>
-      <img src="images/alpacaEvan.jpeg" alt="alpacaEvan" class="img-fluid">
+      <img src="../Images/alpacaEvan.jpeg" alt="alpacaEvan" class="img-fluid">
     </div>
     <div class="container">
       <h2> James Ericsson <h2>
-      <img src="images/alpacaJames.jpeg" alt="alpacaJames" class="img-fluid">
+      <img src="../Images/alpacaJames.jpeg" alt="alpacaJames" class="img-fluid">
     </div>
         </main>
       </div>
