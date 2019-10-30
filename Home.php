@@ -23,6 +23,6 @@
 
 
 
-    //<?php footer(); ?>
+
   </body>
 </html>
