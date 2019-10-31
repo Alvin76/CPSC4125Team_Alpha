@@ -20,11 +20,12 @@
           <input id="search" type="text" placeholder="Type Movie Here">
           <button id="click_button">Search</button>
           <div id="ComicImage">
-            Comic
+            movie
           </div>
           <script>
               $(document).ready(function(){
               $("#click_button").click(function(){
+                console.log("button clicked")
                 $.ajax({type: 'post', url: "get.php", data: {
                   search: document.getElementById("search").value
                   }, success: function(result){
