@@ -10,7 +10,7 @@
 require '../Backend/functions.php';
 
 if(isset($_POST['search'])) {
-  echo "cool"
+  echo "cool";
   $testingGoal = $_POST['search'];
   echo testgetMovies($testingGoal);
 } else {
