@@ -372,4 +372,280 @@
 038900     MOVE '   FINAL TOTALS' TO PR-TOTALS-NAME                     03890083
 039000     PERFORM 700-PRINT-LINE                                       03900060
 039100     .                                                            03910060
-039200                                                                  03920060
+039200* END OF PROGRAM                                                  03920060
+000100 IDENTIFICATION DIVISION.                                         00010000
+000200 PROGRAM-ID.    TOTALS.                                           00020051
+000300 AUTHOR.        CSU0011                                          00030008
+000400**************************************************************    00040000
+000500*                                                            *    00050000
+000600*    EXAMPLE PAYROLL PROGRAM SERIES FOR CPSC3111 (COBOL).    *    00060001
+000700*    FORMAT OF THE SELECT STATEMENT FOR THE DATA SETS USED.  *    00070001
+000800*                                                            *    00080000
+000900**************************************************************    00090000
+001000                                                                  00100000
+001100 ENVIRONMENT DIVISION.                                            00110000
+001200 CONFIGURATION SECTION.                                           00120002
+001300 SOURCE-COMPUTER.                                                 00130002
+001400     Z13                                                          00140002
+001500     WITH DEBUGGING MODE                                          00150002
+001600     .                                                            00160002
+001700                                                                  00170002
+001800 INPUT-OUTPUT SECTION.                                            00180000
+001900                                                                  00190001
+002000 FILE-CONTROL.                                                    00200000
+002100     SELECT PAY-FILE              ASSIGN TO MYINFILE.             00210000
+002200     SELECT PRINT-FILE            ASSIGN TO MYREPORT.             00220000
+002300                                                                  00230000
+002400 DATA DIVISION.                                                   00240000
+002500 FILE SECTION.                                                    00250000
+002600                                                                  00260000
+002700 FD  PAY-FILE                                                     00270000
+002800     RECORDING MODE IS F.                                         00280000
+002900 01  PAY-REC.                                                     00290001
+003000     10  FILLER                   PIC X(080).                     00300000
+003100                                                                  00310000
+003200 FD  PRINT-FILE                                                   00320000
+003300     RECORDING MODE IS F.                                         00330000
+003400 01  PRINT-REC.                                                   00340000
+003500     10  FILLER                   PIC X(132).                     00350000
+003600                                                                  00360000
+003700 WORKING-STORAGE SECTION.                                         00370000
+003800                                                                  00380000
+003900 01  WS-COUNTERS-FLAGS.                                           00390000
+004000     10  EOF-FLAG                 PIC X(03) VALUE "NO".           00400000
+004100     10  WS-SPACING               PIC 9(01) VALUE 2.              00410000
+004200     10  REC-COUNT                PIC 9(05) VALUE ZERO.           00420000
+004300     10  WS-LINE-COUNT            PIC 9(03) VALUE 0.              00430012
+004400     10  WS-PAGE                  PIC 9(03) VALUE 0.              00440012
+004500                                                                  00450036
+004600 01  PAY-CALC-FEILDS.                                             00460053
+004700     10  WS-REG-PAY               PIC S9(07)V99 VALUE 0.          00470036
+004800     10  WS-OT-PAY                PIC S9(07)V99 VALUE 0.          00480036
+004900     10  WS-GROSS-PAY             PIC S9(07)V99 VALUE 0.          00490036
+005000     10  WS-NET-PAY               PIC S9(07)V99 VALUE 0.          00500036
+005100     10  WS-HOURS-WORKED          PIC S9(06)V99 VALUE 0.          00510036
+005200     10  WS-REG-HOURS             PIC S9(06)V99 VALUE 0.          00520036
+005300     10  WS-OT-HOURS              PIC S9(06)V99 VALUE 0.          00530036
+005400     10  WS-OT-RATE               PIC S9(07)V99 VALUE 0.          00540041
+005500                                                                  00550036
+005600 01  FINAL-TOTALS.                                                00560036
+005700     10  FT-HOURS-WORKED          PIC S9(06)V99 VALUE 0.          00570036
+005800     10  FT-REG-PAY               PIC S9(07)V99 VALUE 0.          00580036
+005900     10  FT-OT-PAY                PIC S9(07)V99 VALUE 0.          00590036
+006000     10  FT-EMP-DEDS              PIC S9(07)V99 VALUE 0.          00600036
+006100     10  FT-NET-PAY               PIC S9(07)V99 VALUE 0.          00610036
+006200                                                                  00620000
+006300     COPY PAYROLL.                                                00630000
+006400                                                                  00640000
+006500 01  WS-PRINT-REC                 VALUE SPACES.                   00650008
+006600     05  PR-TOT-MSG.                                              00660036
+006700         10  FILLER                   PIC X(01).                  00670036
+006800         10  PR-LAST-NAME             PIC X(11).                  00680036
+006900         10  FILLER                   PIC X(03).                  00690036
+007000         10  PR-ID-NUMBER             PIC X(05).                  00700037
+007100         10  FILLER                   PIC X(03).                  00710036
+007200         10  PR-HOURS-WORKED          PIC Z,ZZZ.99.               00720065
+007300         10  FILLER                   PIC X(02).                  00730072
+007400     05  PR-INV-MSG.                                              00740037
+007500         10  PR-REG-PAY               PIC ZZ,ZZZ.99.              00750072
+007600         10  FILLER                   PIC X(02).                  00760072
+007700         10  PR-OT-PAY                PIC ZZ,ZZ9.99.              00770072
+007800         10  FILLER                   PIC X(02).                  00780072
+007900         10  PR-EMP-DEDS              PIC ZZ,ZZZ.99CR.            00790072
+008000         10  FILLER                   PIC X(02).                  00800072
+008100         10  PR-NET-PAY               PIC ZZ,ZZZ.99CR.            00810072
+008200         10  FILLER                   PIC X(56).                  00820036
+008300                                                                  00830014
+008400 01  WS-DATE.                                                     00840014
+008500     10  YY                       PIC 9(02).                      00850014
+008600     10  MM                       PIC 9(02).                      00860014
+008700     10  DD                       PIC 9(02).                      00870014
+008800                                                                  00880014
+008900 01  WS-TIME.                                                     00890014
+009000     10  HH                       PIC 9(02).                      00900014
+009100     10  MN                       PIC 9(02).                      00910014
+009200     10  SS                       PIC 9(02).                      00920014
+009300     10  MS                       PIC 9(02).                      00930014
+009400                                                                  00940014
+009500 01  HEADING-1.                                                   00950014
+009600     10  FILLER                  PIC X(02) VALUE SPACES.          00960014
+009700     10  H-DATE.                                                  00970014
+009800         15  H-MM                PIC 9(02).                       00980017
+009900         15  H-SLASH1            PIC X(01) VALUE '/'.             00990017
+010000         15  H-DD                PIC 9(02).                       01000017
+010100         15  H-SLASH2            PIC X(01) VALUE '/'.             01010017
+010200         15  H-YY                PIC 9(02).                       01020017
+010300     10  FILLER                  PIC X(03) VALUE SPACES.          01030014
+010400     10  H-TIME.                                                  01040014
+010500         15  H-HH                PIC Z9.                          01050017
+010600         15  H-COLON             PIC X(01) VALUE ':'.             01060017
+010700         15  H-MN                PIC 9(02).                       01070017
+010800     10  FILLER                  PIC X(04) VALUE SPACES.          01080014
+010900     10  FILLER                  PIC X(40) VALUE                  01090014
+011000         'PROGRAM 3, (00)                        '.               01100036
+011100     10  FILLER                  PIC X(05) VALUE SPACES.          01110014
+011200     10  FILLER                  PIC X(06) VALUE 'PAGE: '.        01120014
+011300     10  H-PAGE                  PIC Z(03).                       01130014
+011400                                                                  01140014
+011500 01  HEADING-2.                                                   01150014
+011600     10  FILLER                  PIC X(40) VALUE                  01160014
+011700         ' LAST           EMP#       HRS    REG P'.               01170075
+011800     10  FILLER                  PIC X(40) VALUE                  01180014
+011900         'AY     OT PAY        DEDS       NET PAY'.               01190075
+012000                                                                  01200007
+012100 PROCEDURE DIVISION.                                              01210007
+012200                                                                  01220007
+012300 010-START-HERE.                                                  01230007
+012400     OPEN INPUT PAY-FILE                                          01240021
+012500     OPEN OUTPUT PRINT-FILE                                       01250007
+012600     PERFORM 100-READ-INPUT                                       01260018
+012700     PERFORM 850-GET-DATE                                         01270015
+012800     PERFORM 800-PRINT-HEADINGS                                   01280015
+012900                                                                  01290007
+013000     PERFORM 300-PROCESS-DATA                                     01300008
+013200       UNTIL EOF-FLAG = "YES"                                     01320007
+013300                                                                  01330007
+013400     PERFORM 900-PRINT-FINAL-TOTALS                               01340050
+013500     CLOSE PAY-FILE                                               01350007
+013600     CLOSE PRINT-FILE                                             01360007
+013700     GOBACK.                                                      01370007
+013800                                                                  01380007
+013900 100-READ-INPUT.                                                  01390007
+014000     READ PAY-FILE INTO WS-PAY-REC                                01400007
+014100       AT END                                                     01410007
+014200         MOVE "YES" TO EOF-FLAG                                   01420007
+014300     END-READ                                                     01430007
+014400     ADD 1 TO REC-COUNT.                                          01440007
+014500                                                                  01450007
+014600 300-PROCESS-DATA.                                                01460007
+014700     MOVE PAY-LAST-NAME TO PR-LAST-NAME                           01470007
+014800     MOVE PAY-ID-NUMBER TO PR-ID-NUMBER                           01480041
+014900     MOVE PAY-HOURS-WORKED TO PR-HOURS-WORKED                     01490041
+014910     MOVE 0 TO WS-REG-PAY                                         01491068
+014920     MOVE 0 TO WS-OT-PAY                                          01492068
+014930*    MOVE 0 TO WS-NET-PAY                                         01493070
+014940     MOVE 0 TO WS-OT-HOURS                                        01494068
+014950     MOVE 0 TO WS-REG-HOURS                                       01495069
+015000     PERFORM 400-CALC-PAY                                         01500041
+015100*    MOVE WS-REG-PAY TO PR-REG-PAY                                01510074
+015200*    MOVE WS-OT-PAY TO PR-OT-PAY                                  01520074
+015300*    MOVE PAY-EMP-DEDS TO PR-EMP-DEDS                             01530074
+015400*    MOVE WS-NET-PAY TO PR-NET-PAY                                01540074
+015500*    PERFORM 700-PRINT-LINE                                       01550067
+015510     PERFORM 550-ACCUM-FINAL-TOTALS                               01551053
+015520     PERFORM 700-PRINT-LINE                                       01552067
+015600     PERFORM 100-READ-INPUT.                                      01560010
+015700                                                                  01570013
+015800 400-CALC-PAY.                                                    01580037
+015900*    INITIALIZE PAY-CALC-FIELDS                                   01590052
+016000     MOVE PAY-HOURS-WORKED TO WS-HOURS-WORKED                     01600041
+016100     IF PAY-PAY-TYPE EQUAL 'H'                                    01610037
+016200         PERFORM 450-CALC-HOURLY                                  01620039
+016201         MOVE WS-REG-PAY TO PR-REG-PAY                            01620174
+016202         MOVE WS-OT-PAY TO PR-OT-PAY                              01620274
+016203         MOVE PAY-EMP-DEDS TO PR-EMP-DEDS                         01620374
+016204         MOVE WS-NET-PAY TO PR-NET-PAY                            01620474
+016210     ELSE                                                         01621066
+016300*    END-IF                                                       01630066
+016400         IF PAY-PAY-TYPE EQUAL 'S'                                01640066
+016500             PERFORM 440-CALC-SALARY                              01650066
+016510             MOVE WS-REG-PAY TO PR-REG-PAY                        01651074
+016520             MOVE WS-OT-PAY TO PR-OT-PAY                          01652074
+016530             MOVE PAY-EMP-DEDS TO PR-EMP-DEDS                     01653074
+016540             MOVE WS-NET-PAY TO PR-NET-PAY                        01654074
+016600         ELSE                                                     01660066
+016700             MOVE '   ** INVALID PAY TYPE - RECORD IGNORED **'    01670075
+016800                TO PR-INV-MSG                                     01680066
+016900     END-IF                                                       01690039
+016910     END-IF                                                       01691066
+017000     .                                                            01700039
+017100*ENTER THE REMAINING DATA HERE                                    01710037
+017200                                                                  01720037
+017300 440-CALC-SALARY.                                                 01730039
+017400     MOVE PAY-EMP-RATE TO WS-REG-PAY                              01740041
+017500     MOVE PAY-EMP-RATE TO WS-GROSS-PAY                            01750041
+017600     MOVE 0 TO WS-OT-PAY                                          01760039
+017610     SUBTRACT PAY-EMP-DEDS FROM WS-GROSS-PAY                      01761071
+017620       GIVING WS-NET-PAY                                          01762071
+017700*    PERFORM 460-CALC-DEDS                                        01770052
+017800     .                                                            01780039
+017900                                                                  01790039
+018000 450-CALC-HOURLY.                                                 01800038
+018100     IF WS-HOURS-WORKED > 40                                      01810041
+018200         SUBTRACT 40 FROM WS-HOURS-WORKED                         01820042
+018300           GIVING WS-OT-HOURS                                     01830042
+018400         ADD 40 TO WS-REG-HOURS                                   01840041
+018500     ELSE                                                         01850067
+018600         ADD WS-HOURS-WORKED TO WS-REG-HOURS                      01860067
+018700     END-IF                                                       01870039
+018800     MULTIPLY WS-REG-HOURS BY PAY-EMP-RATE                        01880041
+018900       GIVING WS-REG-PAY ROUNDED                                  01890051
+019000     MULTIPLY 1.5 BY PAY-EMP-RATE                                 01900039
+019100       GIVING WS-OT-RATE ROUNDED                                  01910051
+019200     MULTIPLY WS-OT-RATE BY WS-OT-HOURS                           01920042
+019300       GIVING WS-OT-PAY ROUNDED                                   01930051
+019400     ADD WS-REG-PAY TO WS-OT-PAY                                  01940039
+019500       GIVING WS-GROSS-PAY                                        01950039
+020000     SUBTRACT PAY-EMP-DEDS FROM WS-GROSS-PAY                      02000041
+020100       GIVING WS-NET-PAY                                          02010039
+020200     .                                                            02020039
+020300                                                                  02030038
+020400 550-ACCUM-FINAL-TOTALS.                                          02040037
+020500     ADD WS-HOURS-WORKED TO FT-HOURS-WORKED                       02050037
+020600     ADD WS-REG-PAY TO FT-REG-PAY                                 02060037
+020700     ADD WS-OT-PAY TO FT-OT-PAY                                   02070037
+020800     ADD PAY-EMP-DEDS TO FT-EMP-DEDS                              02080043
+020900     ADD WS-NET-PAY TO FT-NET-PAY                                 02090037
+021000     .                                                            02100051
+021010                                                                  02101051
+021020                                                                  02102051
+021100 700-PRINT-LINE.                                                  02110013
+021200     PERFORM 750-WRITE                                            02120013
+021300     IF WS-LINE-COUNT > 50                                        02130013
+021400         PERFORM 800-PRINT-HEADINGS                               02140013
+021500     END-IF                                                       02150013
+021600     .                                                            02160013
+021700                                                                  02170029
+021800 750-WRITE.                                                       02180013
+021900     WRITE PRINT-REC FROM WS-PRINT-REC                            02190013
+022000       AFTER ADVANCING WS-SPACING LINES                           02200013
+022100     END-WRITE                                                    02210023
+022200     ADD WS-SPACING TO WS-LINE-COUNT                              02220023
+022300     MOVE 2 TO WS-SPACING                                         02230026
+022400     MOVE SPACES TO WS-PRINT-REC                                  02240029
+022500     .                                                            02250023
+022600                                                                  02260013
+022700 800-PRINT-HEADINGS.                                              02270013
+022800     ADD 1 TO WS-PAGE                                             02280013
+022900     MOVE WS-PAGE TO H-PAGE                                       02290013
+023000     WRITE PRINT-REC FROM HEADING-1                               02300013
+023100       AFTER ADVANCING PAGE                                       02310013
+023200     END-WRITE                                                    02320013
+023300     MOVE HEADING-2 TO WS-PRINT-REC                               02330013
+023400     MOVE 2 TO WS-SPACING                                         02340028
+023500     PERFORM 750-WRITE                                            02350023
+023600     MOVE 2 TO WS-SPACING                                         02360028
+023700     MOVE 0 TO WS-LINE-COUNT                                      02370013
+023800     .                                                            02380013
+023900                                                                  02390013
+024000 850-GET-DATE.                                                    02400013
+024100     ACCEPT WS-DATE FROM DATE                                     02410013
+024200     MOVE MM TO H-MM                                              02420013
+024300     MOVE DD TO H-DD                                              02430013
+024400     MOVE YY TO H-YY                                              02440013
+024500     ACCEPT WS-TIME FROM TIME                                     02450013
+024600     MOVE HH TO H-HH                                              02460013
+024700     MOVE MN TO H-MN                                              02470013
+024800     .                                                            02480013
+024900                                                                  02490050
+025000 900-PRINT-FINAL-TOTALS.                                          02500051
+025010     MOVE ' FINAL TOTALS' TO PR-TOT-MSG                           02501073
+025100     MOVE FT-HOURS-WORKED TO PR-HOURS-WORKED                      02510050
+025200     MOVE FT-REG-PAY TO PR-REG-PAY                                02520050
+025300     MOVE FT-OT-PAY TO PR-OT-PAY                                  02530050
+025400     MOVE FT-EMP-DEDS TO PR-EMP-DEDS                              02540050
+025500     MOVE FT-NET-PAY TO PR-NET-PAY                                02550050
+025600*    MOVE '     FINAL TOTALS' TO PR-TOT-MSG                       02560073
+025700     PERFORM 700-PRINT-LINE                                       02570050
+025800     .                                                            02580050
+025900                                                                  02590050
