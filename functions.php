@@ -4,10 +4,10 @@
 // Defining global Variables
 $color='red';
 $car='BMW';
-$websiteURL = 'https://test-app-ericsson.herokuapp.com/';
-$authors = array('James_Ericsson');
-$nav_items = array('Home Page', 'Todays Comic', 'Random Comic');
-$urls = array('Home.php', 'todays.php', 'random.php');
+$websiteURL = 'https://team-alpha-web-site.herokuapp.com';
+$authors = array('Adam_Daves' , 'James_Ericsson','','');
+$nav_items = array('Home Page', 'About Us', 'Contact Us', 'Results', 'OMDB Search');
+$urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php','Webpages/results.php', 'Webpages/omdb.php');
 
 function noCache(){
   header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
@@ -30,11 +30,11 @@ function head(){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS -->
-    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Required PHP Functions -->
 
-    <title>James Ericsson</title>
+    <title>Team Alpha</title>
   </head>';
   echo $head;
 }
@@ -98,7 +98,7 @@ function nav_bar()
     <!-- Image and text -->
     <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="/dumpster.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="../Images/dumpster.png" width="30" height="30" class="d-inline-block align-top" alt="">
         Git Gud
       </a>
     </nav>
@@ -125,7 +125,7 @@ function footer()
   $footerclosetag = '</footer>';
   global $websiteURL;
   echo $footertag;
-  echo '<p>The website ' . $websiteURL . ' is By James Ericsson</p>';
+  echo '<p>The website ' . $websiteURL . ' is By Team Alpha</p>';
   echo $footerclosetag;
 }
 
@@ -140,4 +140,55 @@ function newComic(){
   echo "<script type='text/javascript'>alert('$message');</script>";
 }
 
+function getIronMan(){
+  $url = "http://omdbapi.com/?apikey=ddbdfa64&s=%27iron%20man%27";
+  $handle = curl_init();
+  curl_setopt($handle, CURLOPT_URL, $url);
+  curl_setopt_array($handle,
+  array(
+  CURLOPT_URL => $url,
+  CURLOPT_RETURNTRANSFER => true
+  )
+  );
+  $output = curl_exec($handle);
+  $response = json_decode($output, true);
+  curl_close($handle);
+  $NumberOfElements = count($response['Search']);
+//  echo $NumberOfElements;
+  for ($x = 0; $x <= $NumberOfElements ; $x++) {
+    echo '<br>'.$response['Search'][$x]["Title"].'<br>';
+    $imageURL = $response['Search'][$x]['Poster'];
+  //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
+  //  echo $response['Search'][$x]['Poster']
+  echo '<img src=" '.$imageURL.' " alt="ironmen">';
+  }
+}
+
+
+
+function testgetMovies($search){
+  $url = 'http://omdbapi.com/?apikey=ddbdfa64&s=%27'.$search;
+  // echo gettype($search);
+  echo $url;
+  $handle = curl_init();
+  curl_setopt($handle, CURLOPT_URL, $url);
+  curl_setopt_array($handle,
+  array(
+  CURLOPT_URL => $url,
+  CURLOPT_RETURNTRANSFER => true
+  )
+  );
+  $output = curl_exec($handle);
+  $response = json_decode($output, true);
+  curl_close($handle);
+  $NumberOfElements = count($response['Search']);
+//  echo $NumberOfElements;
+  for ($x = 0; $x <= $NumberOfElements ; $x++) {
+    echo '<br>'.$response['Search'][$x]["Title"].'<br>';
+    $imageURL = $response['Search'][$x]['Poster'];
+    echo '<img src=" '.$imageURL.' " alt="ironmen">';
+  //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
+  //  echo $response['Search'][$x]['Poster']
+  }
+}
 ?>
