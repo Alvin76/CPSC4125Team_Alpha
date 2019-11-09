@@ -20,7 +20,7 @@
           <input id="search" type="text" placeholder="Type Movie Here">
           <button id="click_button">Search</button>
           <div id="ComicImage">
-            movie
+            movie 11/9/2019
           </div>
           <script>
             var userSearch = document.getElementById("search").value;
