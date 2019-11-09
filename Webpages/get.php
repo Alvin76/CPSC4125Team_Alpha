@@ -1,6 +1,12 @@
-<!doctype html>
-<html lang="en">
-  <?php require '../Backend/functions.php';?>
-  <?php noCache(); ?>
-  <?php getIronMan() ?>
-</html>
+<?php
+require '../Backend/functions.php';
+
+if(isset($_POST['search'])) {
+//  echo "cool";
+  $testingGoal = $_POST['search'];
+//  echo "what?";
+  echo testgetMovies($testingGoal);
+} else {
+  echo "fail";
+};
+ ?>
