@@ -1,13 +1,14 @@
+/*
 body {
- /* padding-bottom:60px;   /* Height of the footer */ */
- background-color: #7c7c7d;
+ /* padding-bottom:60px;   /* Height of the footer */
+ /* background-color: #7c7c7d;
 }
 footer {
  text-align: center;
  bottom:0;
  width:100%;
  height:60px;   /* Height of the footer */
- background-color: red;
+ /* background-color: red;
 }
 
 .center {
@@ -16,4 +17,14 @@ align-content: center;
 }
 
 
-img {max-width:100%}
+img {max-width:100%} */
+
+.jumbotron {
+    background: none
+}
+
+body {
+ /* padding-bottom:60px;   /* Height of the footer */
+    background-color: #0E0816;
+    color: #E7DFDD;
+}
