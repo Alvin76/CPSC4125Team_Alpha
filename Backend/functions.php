@@ -5,7 +5,7 @@
 $color='red';
 $car='BMW';
 $websiteURL = 'https://team-alpha-web-site.herokuapp.com';
-$authors = array('Adam_Daves' , 'James_Ericsson','','');
+$authors = array('Adam_Daves' , 'James_Ericsson','Evan_Jones','');
 $nav_items = array('Home Page', 'About Us', 'Contact Us', 'OMDB Search');
 $urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php', 'Webpages/omdb.php');
 
@@ -94,12 +94,12 @@ function nav_bar()
 {
   global $nav_items, $urls;
 
-  $navbar = '<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  $navbar = '<nav class="navbar navbar-expand-lg">
     <!-- Image and text -->
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar">
       <a class="navbar-brand" href="#">
-        <img src="Images/dumpster.png" width="30" height="30" class="d-inline-block align-top" alt="">
-        Git Gud
+        <img src="../Images/mystic.png" width="40" height="30" class="d-inline-block align-top" alt="">
+        Alpha Alpacas
       </a>
     </nav>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
