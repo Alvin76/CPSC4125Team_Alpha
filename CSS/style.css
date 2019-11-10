@@ -32,7 +32,7 @@ img {max-width:100%} */
 .jumbotron {
   margin-bottom: 0px;
   height: 1000px; /*Height subject to change, just using it as a test. In theory should be same height as background class*/
-  color: white;
+  color: #E7DFDD;
   text-shadow: black 0.3em 0.3em 0.3em;
   background:transparent;
 }
