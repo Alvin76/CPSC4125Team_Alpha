@@ -17,6 +17,8 @@
 
 
     <!-- Page specific content will go down here. -->
+    <div class="row">
+    <div class="col-lg">
     <div class="bg">
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
@@ -25,6 +27,8 @@
         <img src="https://cdn3.movieweb.com/i/article/QaFzHJ2eKTk6Vvd14n0J2cBVmfKryN/1107:50/Disney-Plus-Launch-Movie-Tv-Episode-Catalogue.jpg" alt="f">
       </div>
     </div>
+  </div>
+  </div>
   </div>
     <!-- Page specific content ends here. -->
     <?php footer(); ?>
