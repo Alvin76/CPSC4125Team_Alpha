@@ -51,13 +51,13 @@
                <strong>TAMD</strong>
              </h1>
 
-             <h2>
+             <p>
                <strong>Team Alpha Movie Database</strong>
-             </h2>
+             </p>
 
-             <h3 class="mb-4 d-none d-md-block">
+             <p class="mb-4 d-none d-md-block">
                <strong>Online Movie Database service used for obtaining information regarding all of your favorite films</strong>
-             </h3>
+             </p>
 
              <a target="_blank" href="https://team-alpha-web-site.herokuapp.com/Webpages/omdb.php" class="btn btn-outline-white btn-lg">Get Started
                <i class="fa fa-graduation-cap ml-2"></i>
