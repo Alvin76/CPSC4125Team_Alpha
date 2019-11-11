@@ -200,9 +200,9 @@ Large Test
   display: block !important;
 }
 
-.d-none {
+/*.d-none {
   display: none !important;
-}
+}*/
 
 .btn-lg, .btn-group-lg > .btn {
   padding: 0.5rem 1rem;
