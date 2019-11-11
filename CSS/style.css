@@ -175,3 +175,13 @@ Will Check more after */
 /* NAVBAR SPECIFIC
 Was testing on my own and it worked.
 Will Check more after */
+
+
+/* CAROUSEL SPECIFIC
+Was testing on my own and it worked.
+ */
+.carousel,.carousel .carousel-inner,.carousel .carousel-inner .active,.carousel .carousel-inner .carousel-item,.view,body,html{height:100%;}
+
+/* END CAROUSEL SPECIFIC
+Was testing on my own and it worked.
+ */
