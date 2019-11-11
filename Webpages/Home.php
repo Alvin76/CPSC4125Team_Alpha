@@ -40,7 +40,7 @@
 
      <!--First slide-->
      <div class="carousel-item active">
-       <div class="view" style="background-image: url('https://images5.alphacoders.com/887/887355.jpg'); background-repeat: no-repeat; background-size:contain;">
+       <div class="view" style="background-image: url('https://images5.alphacoders.com/887/887355.jpg'); background-repeat: no-repeat; background-size:cover;">
 
          <!-- Mask & flexbox options-->
          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -74,7 +74,7 @@
 
      <!--Second slide-->
      <div class="carousel-item">
-       <div class="view" style="background-image: url('https://images5.alphacoders.com/757/757038.jpg'); background-repeat: no-repeat; background-size:contain;">
+       <div class="view" style="background-image: url('https://images5.alphacoders.com/757/757038.jpg'); background-repeat: no-repeat; background-size:cover;">
 
          <!-- Mask & flexbox options-->
          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
@@ -108,7 +108,7 @@
 
      <!--Third slide-->
      <div class="carousel-item">
-       <div class="view" style="background-image: url('https://images4.alphacoders.com/762/76276.jpg'); background-repeat: no-repeat; background-size:contain;">
+       <div class="view" style="background-image: url('https://images4.alphacoders.com/762/76276.jpg'); background-repeat: no-repeat; background-size:cover;">
 
          <!-- Mask & flexbox options-->
          <div class="mask rgba-black-light d-flex justify-content-center align-items-center">
