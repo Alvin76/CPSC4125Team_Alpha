@@ -36,7 +36,7 @@
                   search: document.getElementById("search").value
                   }, success: function(result){
                   console.log("Success");
-                  $("#ComicImage").html("result");
+                  $("#ComicImage").html(result);
                   console.log("?");
                 }});
                });
