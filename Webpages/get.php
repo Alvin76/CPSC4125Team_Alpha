@@ -6,7 +6,7 @@ if(isset($_POST['search'])) {
   $testingGoal = $_POST['search'];
 //  echo "what?";
   echo testgetMovies($testingGoal);
-  echo "End"
+  echo "End";
 } else {
   echo "fail";
 };
