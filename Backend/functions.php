@@ -167,29 +167,29 @@ function getIronMan(){
 
 
 function testgetMovies($search){
-  echo "start";
-//   $url = 'http://omdbapi.com/?apikey=ddbdfa64&s=%27'.$search;
-//   // echo gettype($search);
-//   echo $url;
-//   $handle = curl_init();
-//   curl_setopt($handle, CURLOPT_URL, $url);
-//   curl_setopt_array($handle,
-//   array(
-//   CURLOPT_URL => $url,
-//   CURLOPT_RETURNTRANSFER => true
-//   )
-//   );
-//   $output = curl_exec($handle);
-//   $response = json_decode($output, true);
-//   curl_close($handle);
-//   $NumberOfElements = count($response['Search']);
-// //  echo $NumberOfElements;
-//   for ($x = 0; $x <= $NumberOfElements ; $x++) {
-//     echo '<br>'.$response['Search'][$x]["Title"].'<br>';
-//     $imageURL = $response['Search'][$x]['Poster'];
-//     echo '<img src=" '.$imageURL.' " alt="ironmen">';
-//   //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
-//   //  echo $response['Search'][$x]['Poster']
-//   }
+  // echo "start";
+  $url = 'http://omdbapi.com/?apikey=ddbdfa64&s=%27'.$search;
+  // echo gettype($search);
+  echo $url;
+  $handle = curl_init();
+  curl_setopt($handle, CURLOPT_URL, $url);
+  curl_setopt_array($handle,
+  array(
+  CURLOPT_URL => $url,
+  CURLOPT_RETURNTRANSFER => true
+  )
+  );
+  $output = curl_exec($handle);
+  $response = json_decode($output, true);
+  curl_close($handle);
+  $NumberOfElements = count($response['Search']);
+//  echo $NumberOfElements;
+  for ($x = 0; $x <= $NumberOfElements ; $x++) {
+    echo '<br>'.$response['Search'][$x]["Title"].'<br>';
+    $imageURL = $response['Search'][$x]['Poster'];
+    echo '<img src=" '.$imageURL.' " alt="ironmen">';
+  //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
+  //  echo $response['Search'][$x]['Poster']
+  }
 }
 ?>
