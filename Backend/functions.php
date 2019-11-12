@@ -5,9 +5,9 @@
 $color='red';
 $car='BMW';
 $websiteURL = 'https://team-alpha-web-site.herokuapp.com';
-$authors = array('Adam_Daves' , 'James_Ericsson','Evan_Jones','');
-$nav_items = array('Home Page', 'About Us', 'Contact Us', 'OMDB Search');
-$urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php', 'Webpages/omdb.php');
+$authors = array('Adam_Daves' , 'James_Ericsson','','');
+$nav_items = array('Home Page', 'About Us', 'Contact Us', 'Results', 'OMDB Search');
+$urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php','Webpages/results.php', 'Webpages/omdb.php');
 
 function noCache(){
   header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
@@ -30,7 +30,7 @@ function head(){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- CSS -->
-    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/style.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- Required PHP Functions -->
 
@@ -94,12 +94,12 @@ function nav_bar()
 {
   global $nav_items, $urls;
 
-  $navbar = '<nav class="navbar navbar-expand-lg">
+  $navbar = '<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <!-- Image and text -->
-    <nav class="navbar">
+    <nav class="navbar navbar-light bg-light">
       <a class="navbar-brand" href="#">
-        <img src="../Images/mystic.png" width="40" height="30" class="d-inline-block align-top" alt="">
-        Alpha Alpacas
+        <img src="../Images/dumpster.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Git Gud
       </a>
     </nav>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -164,11 +164,32 @@ function getIronMan(){
   }
 }
 
-function testgetMovies($search){
-    console.log("WOW");
-}
 
-function getMovies($search){
-  echo "$search";
+
+function testgetMovies($search){
+  echo "start";
+//   $url = 'http://omdbapi.com/?apikey=ddbdfa64&s=%27'.$search;
+//   // echo gettype($search);
+//   echo $url;
+//   $handle = curl_init();
+//   curl_setopt($handle, CURLOPT_URL, $url);
+//   curl_setopt_array($handle,
+//   array(
+//   CURLOPT_URL => $url,
+//   CURLOPT_RETURNTRANSFER => true
+//   )
+//   );
+//   $output = curl_exec($handle);
+//   $response = json_decode($output, true);
+//   curl_close($handle);
+//   $NumberOfElements = count($response['Search']);
+// //  echo $NumberOfElements;
+//   for ($x = 0; $x <= $NumberOfElements ; $x++) {
+//     echo '<br>'.$response['Search'][$x]["Title"].'<br>';
+//     $imageURL = $response['Search'][$x]['Poster'];
+//     echo '<img src=" '.$imageURL.' " alt="ironmen">';
+//   //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
+//   //  echo $response['Search'][$x]['Poster']
+//   }
 }
 ?>
