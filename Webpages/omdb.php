@@ -10,9 +10,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <?php head(); ?>
 
-  <!-- <style>
-  ?php include '../CSS/style.css'; ?>
-  </style> -->
+  <style>
+  <?php include '../CSS/style.css'; ?>
+  </style>
 
   <body>
     <?php nav_bar(); ?>
