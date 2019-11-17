@@ -185,7 +185,13 @@ function testgetMovies($search){
   $NumberOfElements = count($response['Search']);
 //  echo $NumberOfElements;
   for ($x = 0; $x <= $NumberOfElements ; $x++) {
-    echo '<br>'.$response['Search'][$x]["Title"].'<br>';
+    echo '<div class="container">
+  <div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+  </div>
+</div>'.$response['Search'][$x]["Title"].'<br>';
     $imageURL = $response['Search'][$x]['Poster'];
     echo '<img src=" '.$imageURL.' " alt="ironmen">';
   //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
