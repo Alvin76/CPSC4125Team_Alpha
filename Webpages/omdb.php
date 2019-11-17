@@ -27,6 +27,9 @@
           <div id="ComicImage">
             movie2
           </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
           <script>
             var userSearch = document.getElementById("search").value;
               $(document).ready(function(){
@@ -42,6 +45,7 @@
                });
               });
             </script>
+          </div>
           <!-- ?php getIronMan(); ?> -->
 
       </div>
