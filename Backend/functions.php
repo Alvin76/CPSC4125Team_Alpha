@@ -185,14 +185,6 @@ function testgetMovies($search){
   $NumberOfElements = count($response['Search']);
 //  echo $NumberOfElements;
 
-echo '<div class="container">
-<div class="row">
-<div class="col-md-4">.col-md-4</div>
-<div class="col-md-4">.col-md-4</div>
-<div class="col-md-4">.col-md-4</div>
-</div>
-</div>'
-
 echo '<div class="row">';
 for ($x = 0; $x <= $NumberOfElements ; $x++) {
     echo '<br>'.$response['Search'][$x]["Title"].'<br>';
