@@ -188,10 +188,7 @@ function testgetMovies($search){
   for ($x = 0; $x <= $NumberOfElements ; $x++) {
     echo '<br>'.$response['Search'][$x]["Title"].'<br>';
     $imageURL = $response['Search'][$x]['Poster'];
-<<<<<<< HEAD
-    echo '<img src=" '.$imageURL.' " alt="No Image Available">';
-=======
->>>>>>> dea8aa4b43dac3d04b9404103ed0e890928a3ee2
+    echo '<img src=" '.$imageURL.' " alt="No-Image-Available">';
   //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
   //  echo $response['Search'][$x]['Poster']
   }
