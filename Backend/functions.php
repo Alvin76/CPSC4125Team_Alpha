@@ -209,5 +209,5 @@ echo '</div>';
   // //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
   // //  echo $response['Search'][$x]['Poster']
   // }
-}
+// }
 ?>
