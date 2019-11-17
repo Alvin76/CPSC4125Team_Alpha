@@ -190,7 +190,7 @@ function testgetMovies($search){
     <div class="col-md-4">.$response['Search'][$x]["Title"].'<br>';</div>
     <div class="col-md-4">  $imageURL = $response['Search'][$x]['Poster'];</div>
   </div>
-</div>"
+</div>";
 // .$response['Search'][$x]["Title"].'<br>';
 //     $imageURL = $response['Search'][$x]['Poster'];
 //     echo '<img src=" '.$imageURL.' " alt="ironmen">';
