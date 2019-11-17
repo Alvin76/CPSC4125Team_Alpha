@@ -185,21 +185,12 @@ function testgetMovies($search){
   $NumberOfElements = count($response['Search']);
 //  echo $NumberOfElements;
 
-echo '<div class="row">';
-for ($x = 0; $x <= $NumberOfElements ; $x++) {
+  for ($x = 0; $x <= $NumberOfElements ; $x++) {
     echo '<br>'.$response['Search'][$x]["Title"].'<br>';
-    echo '<div class="col-md-4" > <img class="img-responsive" src="'.$imageURL.' " alt="ironmen"' . $NumberOfElements . '"/></div>';
-    if (($x+1) % 4 == 0)
-        echo '</div>';
+    $imageURL = $response['Search'][$x]['Poster'];
+    echo '<img src=" '.$imageURL.' " alt="ironmen">';
+  //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
+  //  echo $response['Search'][$x]['Poster']
+  }
 }
-echo '</div>';
-
-  // for ($x = 0; $x <= $NumberOfElements ; $x++) {
-  //   echo '<br>'.$response['Search'][$x]["Title"].'<br>';
-  //   $imageURL = $response['Search'][$x]['Poster'];
-  //   echo '<img src=" '.$imageURL.' " alt="ironmen">';
-  // //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
-  // //  echo $response['Search'][$x]['Poster']
-  // }
-// }
 ?>
