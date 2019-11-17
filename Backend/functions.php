@@ -190,7 +190,7 @@ for ($x = 0; $x <= $NumberOfElements ; $x++) {
     echo '<br>'.$response['Search'][$x]["Title"].'<br>';
     echo '<div class="col-md-4" > <img class="img-responsive" src="'.$imageURL.' " alt="ironmen"' . $NumberOfElements . '"/></div>';
     if (($x+1) % 4 == 0)
-        echo '</div><div class="row">';
+        echo '</div>';
 }
 echo '</div>';
 
