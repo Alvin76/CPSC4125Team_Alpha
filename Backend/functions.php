@@ -189,8 +189,8 @@ function testgetMovies($search){
     echo "<div class='col-md-4'>"
     echo $response["Search"][$x]["Title"];
     echo $imageURL = $response['Search'][$x]['Poster'];
-    echo "<img src=" '.$imageURL.' " alt='No-Image-Available'>";
-    echo "</div>";
+    echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
+    echo '</div><div class="row">';
     // echo '<br>'.$response['Search'][$x]["Title"].'<br>';
     // $imageURL = $response['Search'][$x]['Poster'];
     // echo '<img src=" '.$imageURL.' " alt="No-Image-Available">';
