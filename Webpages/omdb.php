@@ -25,7 +25,7 @@
           <div class="col-md-6 col-md-offset-3">
             <div class="row">
               <div id="logo" class="text-center">
-                <h1> <img src="../Images/mystic.png" width="50%" height="50%" alt="Alpha Alpaca Brand"></h1><h1>TAMD</h1>
+                <h1> <img src="../Images/mystic.png" width="60%" height="60%" alt="Alpha Alpaca Brand"></h1><h1>TAMD</h1>
               </div>
               <form role="form" id="form-buscar">
                 <div class="form-group">
