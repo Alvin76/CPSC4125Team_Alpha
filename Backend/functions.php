@@ -184,13 +184,19 @@ function testgetMovies($search){
   curl_close($handle);
   $NumberOfElements = count($response['Search']);
 //  echo $NumberOfElements;
-
+  echo "<div class='row'>";
   for ($x = 0; $x <= $NumberOfElements ; $x++) {
-    echo '<br>'.$response['Search'][$x]["Title"].'<br>';
-    $imageURL = $response['Search'][$x]['Poster'];
-    echo '<img src=" '.$imageURL.' " alt="No-Image-Available">';
+    echo "<div class='col-md-4'>"
+    echo $response["Search"][$x]["Title"];
+    echo $imageURL = $response['Search'][$x]['Poster'];
+    echo "<img src=" '.$imageURL.' " alt='No-Image-Available'>";
+    echo "</div>";
+    // echo '<br>'.$response['Search'][$x]["Title"].'<br>';
+    // $imageURL = $response['Search'][$x]['Poster'];
+    // echo '<img src=" '.$imageURL.' " alt="No-Image-Available">';
   //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
   //  echo $response['Search'][$x]['Poster']
-  }
+}
+echo "</div>";
 }
 ?>
