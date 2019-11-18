@@ -41,13 +41,15 @@
               </form>
             </div>
           </div>
+          <div id="ComicImage">
+
+          </div>
+
         </div>
 
           <!-- <input id="search" type="text" placeholder="Type Movie Here">
           <button id="click_button">Search</button> -->
-          <div id="ComicImage">
 
-          </div>
           <script>
             var userSearch = document.getElementById("search").value;
               $(document).ready(function(){
