@@ -186,7 +186,7 @@ function testgetMovies($search){
 //  echo $NumberOfElements;
   echo "<div class='row'>";
   for ($x = 0; $x < $NumberOfElements ; $x++) {
-    echo "<div class='col-md-4'>";
+    echo "<div class='col-md-auto'>";
     echo $response["Search"][$x]["Title"];
     echo $imageURL = $response['Search'][$x]['Poster'];
     echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
