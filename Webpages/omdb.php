@@ -17,10 +17,9 @@
   <body>
     <?php nav_bar(); ?>
     <!-- Page specific content will go down here. -->
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-4">This is team Alphas super awesome OMDB API Interfacer.</h1>
-        <p class="lead">Go to the Navbar to look up some movies.</p>
+    <div class="container">
+        <!-- <h1 class="display-4">This is team Alphas super awesome OMDB API Interfacer.</h1>
+        <p class="lead">Go to the Navbar to look up some movies.</p> -->
 
           <input id="search" type="text" placeholder="Type Movie Here">
           <button id="click_button">Search</button>
@@ -45,7 +44,6 @@
           <!-- ?php getIronMan(); ?> -->
 
       </div>
-    </div>
     <!-- Page specific content ends here. -->
     <?php footer(); ?>
   </body>
