@@ -183,12 +183,12 @@ function testgetMovies($search){
   $response = json_decode($output, true);
   curl_close($handle);
   $NumberOfElements = count($response['Search']);
+  $imageURL = $response['Search'][$x]['Poster'];
 //  echo $NumberOfElements;
   echo "<div class='row'>";
   for ($x = 0; $x < $NumberOfElements ; $x++) {
-    echo "<div class='col-md-auto'>";
+    echo "<div class='col-md-4'>";
     echo $response["Search"][$x]["Title"];
-    echo $imageURL = $response['Search'][$x]['Poster'];
     echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
     echo '</div>';
     echo '</div><div class="row">';
