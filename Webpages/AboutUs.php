@@ -65,6 +65,7 @@
     <title>About Us</title>
   </head>
   <body>
+    <?php nav_bar(); ?>
     <div class="container">
       <h2> The Group <h2>
       <img src="../Images/4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
