@@ -20,28 +20,16 @@
     <div class="container">
         <!-- <h1 class="display-4">This is team Alphas super awesome OMDB API Interfacer.</h1>
         <p class="lead">Go to the Navbar to look up some movies.</p> -->
-<!--
+
         <div class="container" style="margin-top: 8%;">
           <div class="col-md-auto">
             <div class="row">
               <div id="logo" class="text-center">
                 <h1> <img src="../Images/mystic.png" width="60%" height="60%" alt="Alpha Alpaca Brand"></h1><h1>TAMD</h1>
               </div>
-              <form role="form" id="form-buscar">
-                <div class="form-group">
-                  <div class="input-group">
-                    <input id="search" class="form-control" type="text" name="search" placeholder="Type Movie Here" required/>
-                    <span class="input-group-btn">
-                      <button id="click_button" class="btn btn-success">
-                        <i class="glyphicon glyphicon-search" aria-hidden="true"></i> Search
-                      </button>
-                    </span>
-                  </div>
-                </div>
-              </form>
-            </div>
+              </div>
           </div>
-        </div> -->
+        </div>
 
           <input id="search" type="text" placeholder="Type Movie Here">
           <button id="click_button">Search</button>
