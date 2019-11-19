@@ -31,7 +31,7 @@
           </div>
         </div>
 
-        <div class="container">
+        <div class="container align-items-center" >
         <div class="input-group">
         	<input input id="search" type="text" placeholder="Type Movie Here" class="form-control">
               <span class="input-group-btn">
