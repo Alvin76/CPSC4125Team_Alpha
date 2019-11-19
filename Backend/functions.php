@@ -85,7 +85,7 @@ function getMovies($search){
     // echo '<div class="box '.$x' ">';
      echo '<div class="box"</div>';
      echo '<br>'.$response["Search"][$x]["Title"].'<br>';
-    6echo '</div>';
+    echo '</div>';
   }
   echo '</div>';
 //  echo $NumberOfElements;
