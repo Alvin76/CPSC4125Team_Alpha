@@ -63,9 +63,7 @@ function footer()
 }
 
 function getMovies($search){
-  // echo "start";
   $url = 'http://omdbapi.com/?apikey=ddbdfa64&s=%27'.$search;
-  // echo gettype($search);
   echo "<p style=\"color:#0E0816\">".$url."</p>";
   $handle = curl_init();
   curl_setopt($handle, CURLOPT_URL, $url);
@@ -82,34 +80,13 @@ function getMovies($search){
   $imageURL = $response['Search'][$x]['Poster'];
   echo '<div class ="movie-wrapper">';
   for ($x = 0; $x < $NumberOfElements ; $x++) {
-    // echo '<div class="box '.$x' ">';
      echo '<div class="box'.$x.'">';
      echo $response["Search"][$x]["Title"].'<br>';
-     // echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
-     // echo "<div class='movie-details'>";
-     // echo '<img src="https://scontent.fphl2-1.fna.fbcdn.net/v/t1.0-9/29136768_740794686117939_7492096197583175680_n.jpg?_nc_cat=103&_nc_oc=AQmkZP3Au1p_TK12uoV6AyIWrBHQ2MTdA-H7UoGUpL4Y_qLFr8Pmo4TzcdzH2EuEwOrDoxXJ53kOFA269oA21Smn&_nc_ht=scontent.fphl2-1.fna&oh=0b433bc099861caffcfe001278a49921&oe=5E465463" alt="s">';
-     // echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
      echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available"><br>';
      details($response["Search"][$x]["imdbID"]);
-     // echo "</div>";
     echo '</div>';
   }
   echo '</div>';
-//  echo $NumberOfElements;
-//   echo "<div class='row justify-content-md-center'>";
-//   for ($x = 0; $x < $NumberOfElements ; $x++) {
-//     // details($response["Search"][$x]["imdbID"]);
-//     echo "<div class='col-md-auto'>";
-//     echo '<br>'.$response["Search"][$x]["Title"].'<br>';
-//     echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
-//     echo '</div>';
-//     echo '</div>';
-//     details($response["Search"][$x]["imdbID"]);
-//     echo '<div class="row">';
-//
-// }
-// echo "</div>";
-// }
 }
 
 
@@ -126,7 +103,6 @@ function details($movieID){
     $output = curl_exec($handle);
     $response = json_decode($output, true);
     curl_close($handle);
-    // echo "<div class='movie-details'>". $response["Plot"]. '</div>';
     echo $response["Plot"];
 }
 ?>

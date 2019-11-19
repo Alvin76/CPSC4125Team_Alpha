@@ -19,8 +19,6 @@
     <?php nav_bar(); ?>
     <!-- Page specific content will go down here. -->
     <div class="container">
-        <!-- <h1 class="display-4">This is team Alphas super awesome OMDB API Interfacer.</h1>
-        <p class="lead">Go to the Navbar to look up some movies.</p> -->
 
         <div class="container" style="margin-top: 8%;">
           <div class="col-md-auto">
@@ -40,9 +38,6 @@
               </span>
         </div>
         </div>
-<!--
-          <input id="search" type="text" placeholder="Type Movie Here">
-          <button id="click_button">Search</button> -->
           <div id="ComicImage">
 
           </div>
@@ -50,13 +45,10 @@
             var userSearch = document.getElementById("search").value;
               $(document).ready(function(){
               $("#click_button").click(function(){
-                console.log("button clicked")
                 $.ajax({type: 'post', url: "get.php", data: {
                   search: document.getElementById("search").value
                   }, success: function(result){
-                  console.log("Success");
                   $("#ComicImage").html(result);
-                  console.log("?");
                 }});
                });
               });
@@ -65,7 +57,5 @@
 
       </div>
     <!-- Page specific content ends here. -->
-
   </body>
-  <!-- ?php footer(); ?> -->
 </html>
