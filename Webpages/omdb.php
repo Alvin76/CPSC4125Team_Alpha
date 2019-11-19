@@ -31,10 +31,8 @@
           </div>
         </div>
 
-          <form class="form-inline md-form mr-auto mb-4">
             <input id="search" type="text" placeholder="Type Movie Here">
             <button id="click_button" class="btn aqua-gradient btn-rounded btn-sm my-0">Search</button>
-          </form>
 <!--
           <input id="search" type="text" placeholder="Type Movie Here">
           <button id="click_button">Search</button> -->
