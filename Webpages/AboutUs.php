@@ -16,7 +16,7 @@
 
   <body>
     <?php nav_bar(); ?>
-<!--
+
 
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
@@ -47,7 +47,7 @@
     </div>
         </main>
       </div>
-    </div> -->
+    </div> 
 
     <?php footer(); ?>
   </body>
