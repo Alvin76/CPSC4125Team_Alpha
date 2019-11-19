@@ -83,7 +83,7 @@ function getMovies($search){
 //  echo $NumberOfElements;
   echo "<div class='row justify-content-md-center'>";
   for ($x = 0; $x < $NumberOfElements ; $x++) {
-    details($response["Search"][$x]["imdbID"]);
+    // details($response["Search"][$x]["imdbID"]);
     echo "<div class='col-md-auto'>";
     echo '<br>'.$response["Search"][$x]["Title"].'<br>';
     echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
