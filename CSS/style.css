@@ -15,9 +15,11 @@ footer {
 text-align: center;
 align-content: center;
 }
+*/
 
-
-img {max-width:100%} */
+img {
+  max-width:100%
+}
 
 .bg {
   background: url('/../Images/mcu.jpg') no-repeat center center;
