@@ -83,8 +83,10 @@ function getMovies($search){
   echo '<div class ="movie-wrapper">';
   for ($x = 0; $x < $NumberOfElements ; $x++) {
     // echo '<div class="box '.$x' ">';
-     echo '<div class="box"</div>';
+     echo '<div class="box"';
      echo '<br>'.$response["Search"][$x]["Title"].'<br>';
+     echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
+     details($response["Search"][$x]["imdbID"]);
     echo '</div>';
   }
   echo '</div>';
