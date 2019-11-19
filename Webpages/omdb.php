@@ -43,6 +43,7 @@
           </div>
           <script>
             var userSearch = document.getElementById("search").value;
+            userSearch = userSearch.replace(/ /g,"+");
               $(document).ready(function(){
               $("#click_button").click(function(){
                 $.ajax({type: 'post', url: "get.php", data: {
