@@ -6,8 +6,11 @@ $color='red';
 $car='BMW';
 $websiteURL = 'https://team-alpha-web-site.herokuapp.com';
 $authors = array('Adam_Daves' , 'James_Ericsson','Evan_Jones','Taylor_Woods');
-$nav_items = array('Home Page', 'About Us', 'Contact Us', 'OMDB Search');
-$urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php', 'Webpages/omdb.php');
+// $nav_items = array('Home Page', 'About Us', 'Contact Us', 'OMDB Search');
+// $urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php', 'Webpages/omdb.php');
+$nav_items = array('About Us', 'Contact Us', 'OMDB Search');
+$urls = array('Webpages/AboutUs.php', 'Webpages/contactUs.php', 'Webpages/omdb.php');
+
 
 function noCache(){
   header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
@@ -97,7 +100,7 @@ function nav_bar()
   $navbar = '<nav class="navbar navbar-expand-lg">
     <!-- Image and text -->
     <nav class="navbar">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="https://team-alpha-web-site.herokuapp.com">
         <img src="../Images/mystic.png" width="40" height="30" class="d-inline-block align-top" alt="">
         Alpha Alpacas
       </a>
