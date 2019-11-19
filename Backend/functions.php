@@ -122,6 +122,6 @@ function details($movieID){
     $response = json_decode($output, true);
     curl_close($handle);
     // echo "<div class='movie-details'>". $response["Plot"]. '</div>';
-    echo $response["Plot"]
+    echo $response["Plot"];
 }
 ?>
