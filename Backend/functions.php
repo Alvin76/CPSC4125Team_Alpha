@@ -86,7 +86,8 @@ function getMovies($search){
     echo "<div class='col-md-auto'>";
     echo '<br>'.$response["Search"][$x]["Title"].'<br>';
     echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
-    details($response["Search"][$x]["imdbID"]);
+    // details($response["Search"][$x]["imdbID"]);
+    details();
     echo '</div>';
     echo '</div><div class="row">';
 }
@@ -94,7 +95,7 @@ echo "</div>";
 }
 
 
-function details($movieID){
+function details(){
     echo "<p>made it here</p>";
     // $url = 'http://omdbapi.com/?apikey=ddbdfa64&i='. $movieID;
     // $handle = curl_init();
