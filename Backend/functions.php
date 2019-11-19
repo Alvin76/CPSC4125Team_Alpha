@@ -86,10 +86,10 @@ function getMovies($search){
      echo '<div class="box'.$x.'">';
      echo $response["Search"][$x]["Title"].'<br>';
      // echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
-     echo "<div class='movie-details'>";
+     // echo "<div class='movie-details'>";
      echo '<img src="https://scontent.fphl2-1.fna.fbcdn.net/v/t1.0-9/29136768_740794686117939_7492096197583175680_n.jpg?_nc_cat=103&_nc_oc=AQmkZP3Au1p_TK12uoV6AyIWrBHQ2MTdA-H7UoGUpL4Y_qLFr8Pmo4TzcdzH2EuEwOrDoxXJ53kOFA269oA21Smn&_nc_ht=scontent.fphl2-1.fna&oh=0b433bc099861caffcfe001278a49921&oe=5E465463" alt="s">';
      details($response["Search"][$x]["imdbID"]);
-     echo "</div>";
+     // echo "</div>";
     echo '</div>';
   }
   echo '</div>';
