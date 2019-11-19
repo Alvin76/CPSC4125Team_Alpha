@@ -65,12 +65,6 @@
     <title>About Us</title>
   </head>
   <body>
-    <div class="container">
-      <main>
-        <div class="text-center">
-          <article>Welcome to our OMDB search website.</article>
-          <img src='../Images/alpaca-stare.jpg' alt='photo of me' />
-        </div>
         <div class="container">
     <h2> The Group <h2>
     <img src="../Images/4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
@@ -91,7 +85,5 @@
     <h2> James Ericsson <h2>
     <img src="../Images/alpacaJames.jpeg" alt="alpacaJames" class="img-fluid">
   </div>
-      </main>
-    </div>
   </body>
 </html>
