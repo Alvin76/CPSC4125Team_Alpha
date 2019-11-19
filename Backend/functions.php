@@ -28,13 +28,6 @@ function head(){
   echo $head;
 }
 
-
-
-
-
-
-
-
 function nav_bar()
 {
   global $nav_items, $urls;
