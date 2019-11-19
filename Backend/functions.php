@@ -88,8 +88,10 @@ function getMovies($search){
     echo '<br>'.$response["Search"][$x]["Title"].'<br>';
     echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
     echo '</div>';
-    echo '</div><div class="row">';
+    echo '</div>';
     details($response["Search"][$x]["imdbID"]);
+    echo '<div class="row">';
+
 }
 echo "</div>";
 }
