@@ -31,8 +31,14 @@
           </div>
         </div>
 
-            <input id="search" type="text" placeholder="Type Movie Here">
-            <button id="click_button" class="btn aqua-gradient btn-rounded btn-sm my-0">Search</button>
+        <div class="container">
+        <div class="input-group">
+        	<input input id="search" type="text" placeholder="Type Movie Here" class="form-control">
+              <span class="input-group-btn">
+                <button id="click_button" class="btn btn-search" type="button"><i class="fa fa-search fa-fw"></i> Search</button>
+              </span>
+        </div>
+        </div>
 <!--
           <input id="search" type="text" placeholder="Type Movie Here">
           <button id="click_button">Search</button> -->

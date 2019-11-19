@@ -261,39 +261,38 @@ SEARCH BAR SPECIFIC
      -moz-border-radius: 1px !important;
           border-radius: 1px !important;
 }
+
 .logo {
 color:#E7DFDD;
 width:100%;
 }
+
 .logo h1 {
     font-size: 60px;
     text-shadow: 1px 2px 3px #999;
     font-family: Roboto, sans-serif;
     font-weight: 700;
     letter-spacing: -1px;
-}
-.logo p{
-  padding-bottom: 20px;
-}
+    padding-bottom: 20px;
 
-.form-inline .form-control {
-  display: inline-block;
-  width: auto;
-  vertical-align: middle;
 }
 
-.mr-sm-2,
-.mx-sm-2 {
-  margin-right: 0.5rem !important;
-}
+.btn-search {
+	  background: #4717f6;
+	  border-radius: 0;
+	  color:#e7efdd;
+	  border-width: 1px;
+	  border-style: solid;
+	  border-color: #1c1c1c;
+	}
+	.btn-search:link, .btn-search:visited {
+	  color: #e7efdd;
+	}
+	.btn-search:active, .btn-search:hover {
+	  background:  #190061;
+	  color: #e7efdd;
 
-.aqua-gradient {
-    background: linear-gradient(40deg, #2096ff, #05ffa3) !important; }
-
-.rounded {
-    border-radius: 0.25rem !important;
-}
-
+	}
 
 /*
 END SEARCH BAR SPECIFIC
