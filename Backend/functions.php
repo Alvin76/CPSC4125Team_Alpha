@@ -1,13 +1,6 @@
 <?php
-
-
-// Defining global Variables
-$color='red';
-$car='BMW';
 $websiteURL = 'https://team-alpha-web-site.herokuapp.com';
 $authors = array('Adam_Daves' , 'James_Ericsson','Evan_Jones','Taylor_Woods');
-// $nav_items = array('Home Page', 'About Us', 'Contact Us', 'OMDB Search');
-// $urls = array('Webpages/Home.php', 'Webpages/AboutUs.php', 'Webpages/contactUs.php', 'Webpages/omdb.php');
 $nav_items = array('About Us', 'Contact Us', 'OMDB Search');
 $urls = array('Webpages/AboutUs.php', 'Webpages/contactUs.php', 'Webpages/omdb.php');
 
@@ -18,13 +11,6 @@ function noCache(){
   header("Pragma: no-cache");
 }
 
-// Sample function for interacting with.
-// Notice the keyword global must be used before the variables can be accessed.
-function vehicle()
-{
-  global $color, $car;
-  echo "I have a $color $car.";
-}
 
 
 function head(){
@@ -44,51 +30,7 @@ function head(){
 
 
 
-function getTodaysComic(){
-$url = "https://xkcd.com/info.0.json";
-/**dont change
-*/
-$handle = curl_init();
-curl_setopt($handle, CURLOPT_URL, $url);
-curl_setopt_array($handle,
-array(
-CURLOPT_URL => $url,
-CURLOPT_RETURNTRANSFER => true
-)
-);
-$output = curl_exec($handle);
-$response = json_decode($output, true);
-curl_close($handle);
-/*dont change
-*/
 
-echo $response['title'].'<br>';
-echo $response['year'].'<br>';
-echo '<img src=" '.$response['img'].' " alt="test">';
-}
-
-function getRandomComic(){
-  $random = rand(1,2100);
-  $url = 'https://xkcd.com/'.$random.'/info.0.json';
-  $handle = curl_init();
-  curl_setopt($handle, CURLOPT_URL, $url);
-  curl_setopt_array($handle,
-  array(
-  CURLOPT_URL => $url,
-  CURLOPT_RETURNTRANSFER => true
-  )
-  );
-  $output = curl_exec($handle);
-  $response = json_decode($output, true);
-  curl_close($handle);
-  /*dont change
-  */
-
-  echo $response['title'].'<br>';
-  echo $response['year'].'<br>';
-  echo '<img src=" '.$response['img'].' " alt="random">';
-
-}
 
 
 
@@ -124,51 +66,8 @@ function nav_bar()
 
 function footer()
 {
-  // $footertag = '<footer>';
-  // $footerclosetag = '</footer>';
-  // global $websiteURL;
-  // echo $footertag;
-  // echo '<p>The website ' . $websiteURL . ' is By Team Alpha</p>';
-  // echo $footerclosetag;
   echo '<div class="card text-center"><div class="card-footer"><small class="text-muted">The website https://team-alpha-web-site.herokuapp.com is by Team Alpha</small></div></div>';
 }
-
-function getRandom(){
-  $randNumber = rand(0,2000);
-  echo $randNumber;
-
-}
-
-function newComic(){
-  $message = "button pressed";
-  echo "<script type='text/javascript'>alert('$message');</script>";
-}
-
-function getIronMan(){
-  $url = "http://omdbapi.com/?apikey=ddbdfa64&s=%27iron%20man%27";
-  $handle = curl_init();
-  curl_setopt($handle, CURLOPT_URL, $url);
-  curl_setopt_array($handle,
-  array(
-  CURLOPT_URL => $url,
-  CURLOPT_RETURNTRANSFER => true
-  )
-  );
-  $output = curl_exec($handle);
-  $response = json_decode($output, true);
-  curl_close($handle);
-  $NumberOfElements = count($response['Search']);
-//  echo $NumberOfElements;
-  for ($x = 0; $x <= $NumberOfElements ; $x++) {
-    echo '<br>'.$response['Search'][$x]["Title"].'<br>';
-    $imageURL = $response['Search'][$x]['Poster'];
-  //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
-  //  echo $response['Search'][$x]['Poster']
-  echo '<img src=" '.$imageURL.' " alt="ironmen">';
-  }
-}
-
-
 
 function testgetMovies($search){
   // echo "start";
