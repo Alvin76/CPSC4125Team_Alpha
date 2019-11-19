@@ -276,6 +276,24 @@ width:100%;
   padding-bottom: 20px;
 }
 
+.form-inline .form-control {
+  display: inline-block;
+  width: auto;
+  vertical-align: middle;
+}
+
+.mr-sm-2,
+.mx-sm-2 {
+  margin-right: 0.5rem !important;
+}
+
+.aqua-gradient {
+    background: linear-gradient(40deg, #2096ff, #05ffa3) !important; }
+
+.rounded {
+    border-radius: 0.25rem !important;
+}
+
 
 /*
 END SEARCH BAR SPECIFIC
