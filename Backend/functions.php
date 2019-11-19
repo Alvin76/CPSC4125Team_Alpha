@@ -88,7 +88,7 @@ function testgetMovies($search){
     echo '<br>'.$response["Search"][$x]["Title"].'<br>';
     echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
     echo '</div>';
-    echo '</div>'
+    echo '</div>';
     echo '</div><div class="row">';
     // echo '<br>'.$response['Search'][$x]["Title"].'<br>';
     // $imageURL = $response['Search'][$x]['Poster'];
