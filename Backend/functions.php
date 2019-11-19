@@ -124,12 +124,13 @@ function nav_bar()
 
 function footer()
 {
-  $footertag = '<footer>';
-  $footerclosetag = '</footer>';
-  global $websiteURL;
-  echo $footertag;
-  echo '<p>The website ' . $websiteURL . ' is By Team Alpha</p>';
-  echo $footerclosetag;
+  // $footertag = '<footer>';
+  // $footerclosetag = '</footer>';
+  // global $websiteURL;
+  // echo $footertag;
+  // echo '<p>The website ' . $websiteURL . ' is By Team Alpha</p>';
+  // echo $footerclosetag;
+  echo '<div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>'
 }
 
 function getRandom(){
