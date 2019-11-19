@@ -42,8 +42,8 @@
 
           </div>
           <script>
-            var userSearch = document.getElementById("search").value;
-            userSearch = userSearch.replace(/ /g,"+");
+            var userSearch2 = document.getElementById("search").value;
+            var userSearch = userSearch2.split(' ').join('+');
               $(document).ready(function(){
               $("#click_button").click(function(){
                 $.ajax({type: 'post', url: "get.php", data: {
