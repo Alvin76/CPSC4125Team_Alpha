@@ -39,7 +39,6 @@
         </div>
         </div>
           <div id="ComicImage">
-
           </div>
           <script>
             var userSearch = document.getElementById("search").value;
