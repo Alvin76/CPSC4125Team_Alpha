@@ -108,6 +108,6 @@ function details($movieID){
     $output = curl_exec($handle);
     $response = json_decode($output, true);
     curl_close($handle);
-    echo $url;
+    echo $response["Plot"];
 }
 ?>
