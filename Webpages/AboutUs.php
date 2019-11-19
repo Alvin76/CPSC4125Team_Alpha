@@ -61,11 +61,37 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <title>Hello, world!</title>
+    <?php require '../Backend/functions.php';?>
+    <title>About Us</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-
-      </body>
+    <div class="container">
+      <main>
+        <div class="text-center">
+          <article>Welcome to our OMDB search website.</article>
+          <img src='../Images/alpaca-stare.jpg' alt='photo of me' />
+        </div>
+        <div class="container">
+    <h2> The Group <h2>
+    <img src="../Images/4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
+  </div>
+  <div class="container">
+    <h2> Adam Davies <h2>
+    <img src="../Images/alpacaAdam.jpg" alt="alpacaAdam" class="img-fluid">
+  </div>
+  <div class="container">
+    <h2> Taylor Woods <h2>
+    <img src="../Images/alpacaTaylor.jpeg" alt="alpacaTaylor" class="img-fluid">
+  </div>
+  <div class="container">
+    <h2> Evan <h2>
+    <img src="../Images/alpacaEvan.jpeg" alt="alpacaEvan" class="img-fluid">
+  </div>
+  <div class="container">
+    <h2> James Ericsson <h2>
+    <img src="../Images/alpacaJames.jpeg" alt="alpacaJames" class="img-fluid">
+  </div>
+      </main>
+    </div>
+  </body>
 </html>
