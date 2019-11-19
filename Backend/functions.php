@@ -100,7 +100,7 @@ echo "</div>";
 
 
 function details($movieID){
-    echo "made it here";
+    echo "<p>made it here</p>";
     $url = 'http://omdbapi.com/?apikey=ddbdfa64&i='. $movieID;
     $handle = curl_init();
     curl_setopt($handle, CURLOPT_URL, $url);
