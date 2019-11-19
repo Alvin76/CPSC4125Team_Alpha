@@ -285,3 +285,37 @@ width:100%;
    grid-template-columns: repeat(3, 1fr);
    grid-template-rows: repeat(3, 700px);
 }
+
+
+/*
+END SEARCH BAR SPECIFIC
+*/
+
+
+/*
+CONTACT SPECIFIC
+*/
+
+.box{
+    padding:60px 0px;
+}
+
+.box-part{
+    background:#0E0816;
+    border-radius:0;
+    padding:60px 10px;
+    margin:30px 0px;
+}
+.text{
+    margin:20px 0px;
+    color: #E7DFDD;
+}
+
+.fa{
+     color:#4717f6;
+}
+
+.title
+{
+    color: #0400ff
+}

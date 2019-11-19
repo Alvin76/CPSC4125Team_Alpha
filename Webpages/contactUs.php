@@ -18,17 +18,128 @@
     <?php nav_bar(); ?>
 
     <!-- Page specific content will go down here. -->
-    <div class="jumbotron jumbotron-fluid">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <div class="box">
       <div class="container">
-        <h1 class="display-4">This is team Alphas super awesome OMDB API Interfacer.</h1>
-        <p class="lead">Go to the Navbar to look up some movies.</p>
-        <main>
-          <h1>Contact-us </h1>
-          <p>You can email us at <a href= "mailto:abc@example.com">Send Email</a> </p>
-          <p>or call us at (555)555-5555</p>
-        </main>
+       	<div class="row">
+
+  			    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+  					<div class="box-part text-center">
+
+                          <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+
+  						<div class="title">
+  							<strong><h3>Instagram</h3></strong>
+  						</div>
+
+  						<div class="text">
+  							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+  						</div>
+
+  						<a href="https://www.instagram.com/">Learn More</a>
+
+  					 </div>
+  				</div>
+
+  				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+  					<div class="box-part text-center">
+
+  					    <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+
+  						<div class="title">
+  							<strong><h3>Twitter</h3></strong>
+  						</div>
+
+  						<div class="text">
+  							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+  						</div>
+
+  						<a href="https://twitter.com/?lang=en">Learn More</a>
+
+  					 </div>
+  				</div>
+
+  				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+  					<div class="box-part text-center">
+
+                          <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+
+  						<div class="title">
+  							<strong><h3>Facebook</h3></strong>
+  						</div>
+
+  						<div class="text">
+  							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+  						</div>
+
+  						<a href="https://www.facebook.com/">Learn More</a>
+
+  					 </div>
+  				</div>
+
+  				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+  					<div class="box-part text-center">
+
+                          <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
+
+  						<div class="title">
+  							<strong><h3>Pinterest</h3></strong>
+  						</div>
+
+  						<div class="text">
+  							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+  						</div>
+
+  						<a href="https://www.pinterest.com/">Learn More</a>
+
+  					 </div>
+  				</div>
+
+  				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+  					<div class="box-part text-center">
+
+  					    <i class="fa fa-google-plus fa-3x" aria-hidden="true"></i>
+
+  						<div class="title">
+  							<strong><h3>Google</h3></strong>
+  						</div>
+
+  						<div class="text">
+  							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+  						</div>
+
+  						<a href="https://aboutme.google.com/u/0/?referer=gplus">Learn More</a>
+
+  					 </div>
+  				</div>
+
+  				 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+  					<div class="box-part text-center">
+
+                          <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+
+  						<div class="title">
+  							<strong><h3>Github</h3></strong>
+  						</div>
+
+  						<div class="text">
+  							<span>Find the code used for this very website here!</span>
+  						</div>
+
+  						<a href="https://github.com/Alvin76/CPSC4125Team_Alpha">Learn More</a>
+
+  					 </div>
+  				</div>
+
+  		</div>
       </div>
-    </div>
+  </div>
     <!-- Page specific content ends here. -->
     <?php footer(); ?>
   </body>
