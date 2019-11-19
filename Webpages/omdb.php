@@ -22,7 +22,7 @@
         <p class="lead">Go to the Navbar to look up some movies.</p> -->
 
         <div class="container" style="margin-top: 8%;">
-          <div class="col-md-6 col-md-offset-3">
+          <div class="col-md-auto">
             <div class="row">
               <div id="logo" class="text-center">
                 <h1> <img src="../Images/mystic.png" width="60%" height="60%" alt="Alpha Alpaca Brand"></h1><h1>TAMD</h1>
@@ -32,7 +32,7 @@
                   <div class="input-group">
                     <input id="search" class="form-control" type="text" name="search" placeholder="Type Movie Here" required/>
                     <span class="input-group-btn">
-                      <button id="click_button" class="btn btn-success" type="submit">
+                      <button id="click_button" class="btn btn-success">
                         <i class="glyphicon glyphicon-search" aria-hidden="true"></i> Search
                       </button>
                     </span>
