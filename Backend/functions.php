@@ -130,7 +130,7 @@ function footer()
   // echo $footertag;
   // echo '<p>The website ' . $websiteURL . ' is By Team Alpha</p>';
   // echo $footerclosetag;
-  echo '<div class="card-footer"><small class="text-muted">Last updated 3 mins ago</small></div>';
+  echo '<div class="card text-center"><div class="card-footer"><small class="text-muted">The website https://team-alpha-web-site.herokuapp.com is by Team Alpha</small></div></div>';
 }
 
 function getRandom(){
