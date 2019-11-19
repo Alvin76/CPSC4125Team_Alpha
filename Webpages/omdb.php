@@ -67,5 +67,5 @@
     <!-- Page specific content ends here. -->
 
   </body>
-  <?php footer(); ?>
+  <!-- ?php footer(); ?> -->
 </html>
