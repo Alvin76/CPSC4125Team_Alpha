@@ -15,8 +15,8 @@
 
   <body>
     <?php nav_bar(); ?>
+<!--
 
-    <!-- Page specific content will go down here. -->
     <div class="jumbotron jumbotron-fluid">
       <div class="container">
         <main>
@@ -46,8 +46,8 @@
     </div>
         </main>
       </div>
-    </div>
-    <!-- Page specific content ends here. -->
+    </div> -->
+
     <?php footer(); ?>
   </body>
 </html>
