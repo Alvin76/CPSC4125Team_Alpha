@@ -65,6 +65,7 @@
 
       </div>
     <!-- Page specific content ends here. -->
-    <?php footer(); ?>
+
   </body>
+  <?php footer(); ?>
 </html>
