@@ -9,9 +9,9 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <?php head(); ?>
 
-  <style>
-  <?php include '../CSS/style.css'; ?>
-  </style>
+  <!-- <style>
+  ?php include '../CSS/style.css'; ?>
+  </style> -->
 
   <body>
     <?php nav_bar(); ?>
@@ -21,7 +21,7 @@
       <div class="container">
         <main>
           <div class="text-center">
-            <article>Welcome to our OMDB search website. TEXT</article>
+            <article>Welcome to our OMDB search website.</article>
             <img src='../Images/alpaca-stare.jpg' alt='photo of me' />
           </div>
           <div class="container">
