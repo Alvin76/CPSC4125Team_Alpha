@@ -81,19 +81,20 @@ function testgetMovies($search){
   $NumberOfElements = count($response['Search']);
   $imageURL = $response['Search'][$x]['Poster'];
 //  echo $NumberOfElements;
-  echo "<div class='row justify-content-md-center'>";
+  // echo "<div class='row justify-content-md-center'>";
   for ($x = 0; $x < $NumberOfElements ; $x++) {
     echo "<div class='col-md-auto'>";
     echo '<br>'.$response["Search"][$x]["Title"].'<br>';
     echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
     echo '</div>';
-    echo '</div><div class="row">';
+    // echo '</div>';
+    // echo '</div><div class="row">';
     // echo '<br>'.$response['Search'][$x]["Title"].'<br>';
     // $imageURL = $response['Search'][$x]['Poster'];
     // echo '<img src=" '.$imageURL.' " alt="No-Image-Available">';
   //  echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="ironman">';
   //  echo $response['Search'][$x]['Poster']
   }
-echo "</div>";
+// echo "</div>";
 }
 ?>
