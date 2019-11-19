@@ -44,6 +44,7 @@
           <script>
             var userSearch2 = document.getElementById("search").value;
             var userSearch = userSearch2.split(' ').join('%20');
+            console.log(userSearch);
               $(document).ready(function(){
               $("#click_button").click(function(){
                 $.ajax({type: 'post', url: "get.php", data: {

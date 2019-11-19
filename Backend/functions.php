@@ -63,7 +63,8 @@ function footer()
 }
 
 function getMovies($search){
-  $url = 'http://omdbapi.com/?apikey=ddbdfa64&s=%27'.$search;
+
+  $url = 'http://omdbapi.com/?apikey=ddbdfa64&s=%27'.urlencode($search);
   echo "<p style=\"color:#0E0816\">".$url."</p>";
   $handle = curl_init();
   curl_setopt($handle, CURLOPT_URL, $url);
