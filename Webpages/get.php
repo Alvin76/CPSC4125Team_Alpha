@@ -1,11 +1,8 @@
 <?php
 require '../Backend/functions.php';
-
 if(isset($_POST['search'])) {
-//  echo "cool";
   $testingGoal = $_POST['search'];
-//  echo "what?";
-  echo testgetMovies($testingGoal);
+  echo getMovies($testingGoal);
 } else {
   echo "fail";
 };
