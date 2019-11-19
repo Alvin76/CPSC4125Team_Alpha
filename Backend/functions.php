@@ -96,19 +96,18 @@ echo "</div>";
 
 
 function details($movieID){
-    echo "<p>made it here</p>";
-    // $url = 'http://omdbapi.com/?apikey=ddbdfa64&i='. $movieID;
-    // $handle = curl_init();
-    // curl_setopt($handle, CURLOPT_URL, $url);
-    // curl_setopt_array($handle,
-    // array(
-    // CURLOPT_URL => $url,
-    // CURLOPT_RETURNTRANSFER => true
-    // )
-    // );
-    // $output = curl_exec($handle);
-    // $response = json_decode($output, true);
-    // curl_close($handle);
-    // echo $url;
+    $url = 'http://omdbapi.com/?apikey=ddbdfa64&i='. $movieID;
+    $handle = curl_init();
+    curl_setopt($handle, CURLOPT_URL, $url);
+    curl_setopt_array($handle,
+    array(
+    CURLOPT_URL => $url,
+    CURLOPT_RETURNTRANSFER => true
+    )
+    );
+    $output = curl_exec($handle);
+    $response = json_decode($output, true);
+    curl_close($handle);
+    echo $url;
 }
 ?>
