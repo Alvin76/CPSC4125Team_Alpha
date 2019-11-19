@@ -62,7 +62,7 @@ function footer()
   echo '<div class="card text-center"><div class="card-footer"><small class="text-muted">The website https://team-alpha-web-site.herokuapp.com is by Team Alpha</small></div></div>';
 }
 
-function testgetMovies($search){
+function getMovies($search){
   // echo "start";
   $url = 'http://omdbapi.com/?apikey=ddbdfa64&s=%27'.$search;
   // echo gettype($search);
@@ -86,6 +86,7 @@ function testgetMovies($search){
     echo "<div class='col-md-auto'>";
     echo '<br>'.$response["Search"][$x]["Title"].'<br>';
     echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
+    details($response["Search"][$x]["imdbID"]);
     echo '</div>';
     echo '</div><div class="row">';
     // echo '<br>'.$response['Search'][$x]["Title"].'<br>';
@@ -95,5 +96,23 @@ function testgetMovies($search){
   //  echo $response['Search'][$x]['Poster']
 }
 echo "</div>";
+}
+
+
+function details($movieID){
+    $url = 'http://omdbapi.com/?apikey=ddbdfa64&i='. $movieID;
+    $handle = curl_init();
+    curl_setopt($handle, CURLOPT_URL, $url);
+    curl_setopt_array($handle,
+    array(
+    CURLOPT_URL => $url,
+    CURLOPT_RETURNTRANSFER => true
+    )
+    );
+    $output = curl_exec($handle);
+    $response = json_decode($output, true);
+    curl_close($handle);
+    echo $url;
+
 }
 ?>
