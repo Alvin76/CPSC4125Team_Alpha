@@ -20,7 +20,7 @@
     <div class="container">
         <!-- <h1 class="display-4">This is team Alphas super awesome OMDB API Interfacer.</h1>
         <p class="lead">Go to the Navbar to look up some movies.</p> -->
-
+<!--
         <div class="container" style="margin-top: 8%;">
           <div class="col-md-auto">
             <div class="row">
@@ -41,10 +41,10 @@
               </form>
             </div>
           </div>
-        </div>
+        </div> -->
 
-          <!-- <input id="search" type="text" placeholder="Type Movie Here">
-          <button id="click_button">Search</button> -->
+          <input id="search" type="text" placeholder="Type Movie Here">
+          <button id="click_button">Search</button>
           <div id="ComicImage">
 
           </div>
