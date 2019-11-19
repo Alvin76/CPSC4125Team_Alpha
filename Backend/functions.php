@@ -80,20 +80,28 @@ function getMovies($search){
   curl_close($handle);
   $NumberOfElements = count($response['Search']);
   $imageURL = $response['Search'][$x]['Poster'];
-//  echo $NumberOfElements;
-  echo "<div class='row justify-content-md-center'>";
+  echo '<div class ="movie-wrapper">'
   for ($x = 0; $x < $NumberOfElements ; $x++) {
-    // details($response["Search"][$x]["imdbID"]);
-    echo "<div class='col-md-auto'>";
+    echo '<div class="box '.$x' ">'
     echo '<br>'.$response["Search"][$x]["Title"].'<br>';
-    echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
-    echo '</div>';
-    echo '</div>';
-    details($response["Search"][$x]["imdbID"]);
-    echo '<div class="row">';
-
-}
-echo "</div>";
+    echo '</div>'
+  }
+  echo '</div>'
+//  echo $NumberOfElements;
+//   echo "<div class='row justify-content-md-center'>";
+//   for ($x = 0; $x < $NumberOfElements ; $x++) {
+//     // details($response["Search"][$x]["imdbID"]);
+//     echo "<div class='col-md-auto'>";
+//     echo '<br>'.$response["Search"][$x]["Title"].'<br>';
+//     echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available>';
+//     echo '</div>';
+//     echo '</div>';
+//     details($response["Search"][$x]["imdbID"]);
+//     echo '<div class="row">';
+//
+// }
+// echo "</div>";
+// }
 }
 
 
