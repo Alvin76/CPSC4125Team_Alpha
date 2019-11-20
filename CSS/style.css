@@ -31,7 +31,7 @@ body {
 Was testing on my own and it worked.
 Will Check more after */
 .navbar-toggler{
-  background-color: transparent;
+  background-color: red;
   background-image: "Cat_not_found.JPG";
 }
 
