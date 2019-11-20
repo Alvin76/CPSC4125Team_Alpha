@@ -64,6 +64,7 @@ function footer()
 
 function getMovies($search){
 
+
   $url = 'http://omdbapi.com/?apikey=ddbdfa64&s=%27'.urlencode($search);
   echo "<p style=\"color:#0E0816\">".$url."</p>";
   $handle = curl_init();
@@ -84,6 +85,7 @@ function getMovies($search){
      echo '<div class="box'.$x.'">';
      echo $response["Search"][$x]["Title"].'<br>';
      echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available"><br>';
+     echo  '<a class="btn btn-primary" href="#" role="button">Info</a>'
      /*details($response["Search"][$x]["imdbID"]);*/
     echo '</div>';
   }
