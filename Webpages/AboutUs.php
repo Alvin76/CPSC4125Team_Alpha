@@ -17,26 +17,33 @@
   </head>
   <body>
     <?php nav_bar(); ?>
+
     <div class="container">
-      <h2> The Group <h2>
-      <img src="../Images/4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
+      <div class="row">
+        <div class="col-sm">
+          <h2> The Group <h2>
+            <img src="../Images/4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
+        </div>
+      <div class="col-sm">
+        <h2> Adam Davies <h2>
+        <img src="../Images/alpacaAdam.jpg" alt="alpacaAdam" class="img-fluid">
+      </div>
     </div>
-    <div class="container">
-      <h2> Adam Davies <h2>
-      <img src="../Images/alpacaAdam.jpg" alt="alpacaAdam" class="img-fluid">
-    </div>
-    <div class="container">
+    <div class="row">
+      <div class="col-sm">
       <h2> Taylor Woods <h2>
       <img src="../Images/alpacaTaylor.jpeg" alt="alpacaTaylor" class="img-fluid">
     </div>
-    <div class="container">
+    <div class="col-sm">
       <h2> Evan <h2>
       <img src="../Images/alpacaEvan.jpeg" alt="alpacaEvan" class="img-fluid">
     </div>
+  </div>
     <div class="container">
       <h2> James Ericsson <h2>
       <img src="../Images/llamaJames.jpg" alt="llamaJames" class="img-fluid">
     </div>
+  </div>
     <?php footer(); ?>
   </body>
 </html>
