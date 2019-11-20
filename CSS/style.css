@@ -30,8 +30,12 @@ body {
 /* NAVBAR SPECIFIC
 Was testing on my own and it worked.
 Will Check more after */
+.navbar-toggler{
+  background-color: green;
+}
+
 .navbar {
-  background-color: #190061;
+  background-color: red; /*190061*/
 }
 .navbar .navbar-brand {
   color: #e7efdd;
