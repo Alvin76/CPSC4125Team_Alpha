@@ -31,11 +31,11 @@ body {
 Was testing on my own and it worked.
 Will Check more after */
 .navbar-toggler{
-  background-color: green;
+  background-color: red;
 }
 
 .navbar {
-  background-color: red; /*190061*/
+  background-color: 190061; /*190061*/
 }
 .navbar .navbar-brand {
   color: #e7efdd;
