@@ -41,7 +41,7 @@
   </div>
     <div class="container">
       <h2> James Ericsson <h2>
-      <img src="../Images/llamaJames.jpg" alt="llamaJames" class="img-fluid" width=25%>
+      <img src="../Images/llamaJames.jpg" alt="llamaJames" class="img-fluid" width=50%>
     </div>
   </div>
     <?php footer(); ?>
