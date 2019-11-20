@@ -18,15 +18,21 @@
   <body>
     <?php nav_bar(); ?>
 
+    <script>
+  $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
+  </script>
+
     <div class="container">
       <div class="row">
         <div class="col-sm">
           <h2> The Group <h2>
-            <img src="../Images/4alpacas.jpg" alt="Four Alpacas" class="img-fluid">
+            <img src="../Images/4alpacas.jpg"  alt="Four Alpacas" class="img-fluid">
         </div>
       <div class="col-sm">
         <h2> Adam Davies <h2>
-        <img src="../Images/alpacaAdam.jpg" alt="alpacaAdam" class="img-fluid">
+        <img src="../Images/alpacaAdam.jpg" data-toggle="tooltip" title="Hooray!" alt="alpacaAdam" class="img-fluid">
       </div>
     </div>
     <div class="row">
