@@ -107,6 +107,8 @@ function getMovies($search){
      echo '<div class="box'.$x.'">';
      echo $response["Search"][$x]["Title"].'<br>';
      echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available"><br>';
+     echo $modal1;
+     echo $modal2;
      /*details($response["Search"][$x]["imdbID"]);*/
     echo '</div>';
   }
