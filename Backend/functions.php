@@ -85,9 +85,7 @@ function getMovies($search){
      echo '<div class="box'.$x.'">';
      echo $response["Search"][$x]["Title"].'<br>';
      echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available"><br>';
-     echo  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-      Info
-     </button>;
+     echo  '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Info</button>';
      /*details($response["Search"][$x]["imdbID"]);*/
     echo '</div>';
   }
