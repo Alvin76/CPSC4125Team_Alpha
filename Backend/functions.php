@@ -90,7 +90,7 @@ function getMovies($search){
      /*details($response["Search"][$x]["imdbID"]);*/
 
 
-     $modal1 ='<!-- Modal -->
+     /*$modal1 ='<!-- Modal -->
  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -109,7 +109,7 @@ function getMovies($search){
       </div>
     </div>
   </div>
-</div>';
+</div>';*/
 
 /*echo $modal1
 echo details($response["Search"][$x]["imdbID"]);
