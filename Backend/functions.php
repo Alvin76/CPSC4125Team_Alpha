@@ -98,7 +98,7 @@ function getMovies($search){
       </div>
     </div>
   </div>
-</div>'
+</div>'    
 
 
 
