@@ -80,9 +80,9 @@ function getMovies($search){
   $NumberOfElements = count($response['Search']);
   $imageURL = $response['Search'][$x]['Poster'];
 
-  $modal1 ='<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
+  $modal1 ='<div class="modal fade" id="exampleModal{{id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">';
+  $modal1a = '<div class="modal-dialog" role="document" id="{{id}}">';
+  $modal1b = '<div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -104,6 +104,9 @@ function getMovies($search){
 
   echo '<div class ="movie-wrapper">';
   for ($x = 0; $x < $NumberOfElements ; $x++) {
+     $id = $x
+     $modal1 = '<div class="modal fade" id="exampleModal{{'$id'}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">';
+     $modal1a = '<div class="modal-dialog" role="document" id="{{'$id'}}">';
      echo '<div class="box'.$x.'">';
      echo $response["Search"][$x]["Title"].'<br>';
      echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available"><br>';
