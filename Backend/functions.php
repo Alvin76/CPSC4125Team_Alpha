@@ -91,6 +91,15 @@ function getMovies($search){
       </div>
       <div class="modal-body">';
 
+  $modal2 = '</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>'
+
 
 
   echo '<div class ="movie-wrapper">';
@@ -98,7 +107,8 @@ function getMovies($search){
      echo '<div class="box'.$x.'">';
      echo $response["Search"][$x]["Title"].'<br>';
      echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available"><br>';
-     details($response["Search"][$x]["imdbID"]);
+     echo '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Launch demo modal</button>'
+     /*details($response["Search"][$x]["imdbID"]);*/
     echo '</div>';
   }
   echo '</div>';
