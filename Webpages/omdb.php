@@ -24,7 +24,7 @@
           <div class="col-md-auto">
             <div class="row">
               <div id="logo" class="text-center">
-                <h1> <img src="../Images/mystic.png" width="60%" height="60%" alt="Alpha Alpaca Brand"></h1><h1>TAMD</h1>
+                <h1> <img src="../Images/mystic.png" width="60%" height="60%" alt="Alpha Alpaca Brand"></h1><h1>TAMD1</h1>
               </div>
               </div>
           </div>
