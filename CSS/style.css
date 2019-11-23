@@ -27,12 +27,11 @@ body {
     text-align: center;
 }
 
-/* NAVBAR SPECIFIC
-Was testing on my own and it worked.
-Will Check more after */
+/*
+NAVBAR SPECIFIC
+ */
 .navbar-toggler{
-  background-color: red;
-  background-image: "Cat_not_found.JPG";
+  color: #e7efdd;
 }
 
 .navbar {
@@ -317,7 +316,7 @@ CONTACT SPECIFIC
 
 .title
 {
-    color: #0400ff
+    color:#4717f6;
 }
 
 #mysticLamaContainer {
