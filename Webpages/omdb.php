@@ -20,7 +20,7 @@
     <!-- Page specific content will go down here. -->
     <div class="container">
 
-        <div class="container" style="margin-top: 8%;">
+        <div class="container" id="mysticLamaContainer">
           <div class="col-md-auto">
             <div class="row">
               <div id="logo" class="text-center">
