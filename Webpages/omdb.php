@@ -30,7 +30,7 @@
           </div>
         </div>
 
-        <div class="container align-items-center" >
+        <div class="container align-items-center" id="mysticLamaContainer" >
         <div class="input-group">
         	<input input id="search" type="text" placeholder="Type Movie Here" class="form-control">
               <span class="input-group-btn">
