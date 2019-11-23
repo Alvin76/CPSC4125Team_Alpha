@@ -34,7 +34,7 @@
   						</div>
 
   						<div class="text">
-  							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+  							<span>Please Contact us on Instagram via this link.</span>
   						</div>
 
   						<a href="https://www.instagram.com/">Learn More</a>
@@ -53,7 +53,7 @@
   						</div>
 
   						<div class="text">
-  							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+  							<span>Find us on twitter here.</span>
   						</div>
 
   						<a href="https://twitter.com/?lang=en">Learn More</a>
@@ -72,7 +72,7 @@
   						</div>
 
   						<div class="text">
-  							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+  							<span>Can you find our Facebook page?</span>
   						</div>
 
   						<a href="https://www.facebook.com/">Learn More</a>
@@ -91,7 +91,7 @@
   						</div>
 
   						<div class="text">
-  							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+  							<span>Does anyone use pintrest?</span>
   						</div>
 
   						<a href="https://www.pinterest.com/">Learn More</a>
@@ -110,7 +110,7 @@
   						</div>
 
   						<div class="text">
-  							<span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr scripta ocurreret qui ad.</span>
+  							<span>We would be glad to hear from you.</span>
   						</div>
 
   						<a href="https://aboutme.google.com/u/0/?referer=gplus">Learn More</a>
