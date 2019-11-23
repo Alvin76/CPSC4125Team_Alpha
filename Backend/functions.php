@@ -79,39 +79,11 @@ function getMovies($search){
   curl_close($handle);
   $NumberOfElements = count($response['Search']);
   $imageURL = $response['Search'][$x]['Poster'];
-//   $modalFirstThirdBeforeTitle = '<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-// <div class="modal" tabindex="-1" role="dialog">
-//       <div class="modal-dialog" role="document">
-//         <div class="modal-content">
-//           <div class="modal-header">
-//             <h5 class="modal-title">';
-//   $ModalSecondThirdBeforeBody =  '</h5>
-//             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-//               <span aria-hidden="true">&times;</span>
-//             </button>
-//           </div>
-//           <div class="modal-body"><p>';
-//   $ModalThirdEnd = '</p>
-//           </div>
-//           <div class="modal-footer">
-//             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-//           </div>
-//         </div>
-//       </div>
-//     </div>
-//     </div>';
-
   echo '<div class ="movie-wrapper">';
   for ($x = 0; $x < $NumberOfElements ; $x++) {
      echo '<div class="box'.$x.'">';
      echo $response["Search"][$x]["Title"].'<br>';
      echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available"><br>';
-    // echo '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">';
-    // echo 'View Plot';
-    // echo '</button>';
-    // echo  $modalFirstThirdBeforeTitle;
-    // echo $response["Search"][$x]["Title"].'<br>';
-    // echo $ModalSecondThirdBeforeBody;
     echo '<!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong'.$x.'">
       View Plot
@@ -131,12 +103,10 @@ function getMovies($search){
             echo '</div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
         </div>
       </div>
     </div>';
-    // echo $ModalThirdEnd;
     echo '</div>';
   }
   echo '</div>';
