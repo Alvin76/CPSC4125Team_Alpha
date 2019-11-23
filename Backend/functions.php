@@ -113,11 +113,11 @@ function getMovies($search){
     // echo $response["Search"][$x]["Title"].'<br>';
     // echo $ModalSecondThirdBeforeBody;
     echo '<!-- Button trigger modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong'.$x.'">
       Launch demo modal
     </button>';
     echo'<!-- Modal -->
-    <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal fade" id="exampleModalLong'.$x.'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle'.$x.'" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
