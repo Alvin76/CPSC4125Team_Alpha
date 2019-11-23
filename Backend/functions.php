@@ -126,9 +126,9 @@ function getMovies($search){
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            ...
-          </div>
+          <div class="modal-body">'
+            echo details($response["Search"][$x]["imdbID"]);
+            echo '</div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-primary">Save changes</button>
@@ -136,8 +136,6 @@ function getMovies($search){
         </div>
       </div>
     </div>';
-
-    details($response["Search"][$x]["imdbID"]);
     // echo $ModalThirdEnd;
     echo '</div>';
   }
