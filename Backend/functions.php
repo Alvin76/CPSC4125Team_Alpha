@@ -129,11 +129,14 @@ $ModalThirdEnd = '</p>
     //     echo   '</button>';
     //   echo   '</div>';
     //   echo '   <div class="modal-body">';
-      echo  $modalFirstThirdBeforeTitle;
-      echo $response["Search"][$x]["Title"].'<br>';
-      echo $ModalSecondThirdBeforeBody;
-     details($response["Search"][$x]["imdbID"]);
-     echo $ModalThirdEnd;
+    echo '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">';
+    echo 'View Plot';
+    echo '</button>';
+    echo  $modalFirstThirdBeforeTitle;
+    echo $response["Search"][$x]["Title"].'<br>';
+    echo $ModalSecondThirdBeforeBody;
+    details($response["Search"][$x]["imdbID"]);
+    echo $ModalThirdEnd;
      // echo $x;
      // echo '</div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button><button type="button" class="btn btn-primary">Save changes</button></div></div></div></div>';
      // /*details($response["Search"][$x]["imdbID"]);*/
