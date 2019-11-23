@@ -101,18 +101,19 @@ function getMovies($search){
      echo $response["Search"][$x]["Title"].'<br>';
      echo '<img src=" '.$response['Search'][$x]['Poster'].' " alt="No-Image-Available"><br>';
      echo '<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">View Plot</button>';
-     echo '<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">'
-     echo '<div class="modal-dialog" role="document">'
-     echo '<div class="modal-content">'
-    echo     '<div class="modal-header">'
-      echo     '<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>'
-      echo     '<button type="button" class="close" data-dismiss="modal" aria-label="Close">'
-      echo     '<span aria-hidden="true">&times;</span>'
-        echo   '</button>'
-      echo   '</div>'
+
+     echo '<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">';
+     echo '<div class="modal-dialog" role="document">';
+     echo '<div class="modal-content">';
+    echo     '<div class="modal-header">';
+      echo     '<h5 class="modal-title" id="exampleModalLabel">Modal title</h5>';
+      echo     '<button type="button" class="close" data-dismiss="modal" aria-label="Close">';
+      echo     '<span aria-hidden="true">&times;</span>';
+        echo   '</button>';
+      echo   '</div>';
       echo '   <div class="modal-body">';
      details($response["Search"][$x]["imdbID"]);
-     echo '</div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button><button type="button" class="btn btn-primary">Save changes</button></div></div></div></div>'
+     echo '</div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button><button type="button" class="btn btn-primary">Save changes</button></div></div></div></div>';
      /*details($response["Search"][$x]["imdbID"]);*/
     echo '</div>';
   }
