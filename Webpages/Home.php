@@ -60,7 +60,7 @@
                <strong>Online Movie Database service used for obtaining information regarding all of your favorite films</strong>
              </h4>
 
-             <a target="_blank" href='omdb.php' class="btn btn-outline-white btn-lg">Search Movies
+             <a target="_self" href='omdb.php' class="btn btn-outline-white btn-lg">Search Movies
                <i class="fa fa-graduation-cap ml-2"></i>
              </a>
            </div>
@@ -94,7 +94,7 @@
                <strong>Online Movie Database service used for obtaining information regarding all of your favorite films</strong>
              </h4>
 
-             <a target="_blank" href='omdb.php' class="btn btn-outline-white btn-lg">Search Movies
+             <a target="_self" href='omdb.php' class="btn btn-outline-white btn-lg">Search Movies
                <i class="fa fa-graduation-cap ml-2"></i>
              </a>
            </div>
@@ -128,7 +128,7 @@
                <strong>Online Movie Database service used for obtaining information regarding all of your favorite films</strong>
              </h4>
 
-             <a target="_blank" href='omdb.php' class="btn btn-outline-white btn-lg">Search Movies
+             <a target="_self" href='omdb.php' class="btn btn-outline-white btn-lg">Search Movies
                <i class="fa fa-graduation-cap ml-2"></i>
              </a>
            </div>
