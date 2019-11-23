@@ -99,7 +99,7 @@ function getMovies($search){
             </button>
           </div>
           <div class="modal-body">';
-            echo '<b>'
+            echo '<b>';
             echo details($response["Search"][$x]["imdbID"]);
             echo '</b></div>
           <div class="modal-footer">
