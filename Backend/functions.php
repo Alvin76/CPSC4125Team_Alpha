@@ -126,7 +126,7 @@ function getMovies($search){
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">'
+          <div class="modal-body">';
             echo details($response["Search"][$x]["imdbID"]);
             echo '</div>
           <div class="modal-footer">
