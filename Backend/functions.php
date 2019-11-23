@@ -32,7 +32,7 @@ function nav_bar()
 {
   global $nav_items, $urls;
 
-  $navbar = '<nav class="navbar navbar-expand-lg">
+  $navbar = '<nav class="navbar navbar-expand-lg navbar-dark">
     <!-- Image and text -->
     <nav class="navbar">
       <a class="navbar-brand" href="https://team-alpha-web-site.herokuapp.com">
