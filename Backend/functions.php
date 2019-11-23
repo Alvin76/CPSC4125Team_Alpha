@@ -114,7 +114,7 @@ function getMovies($search){
     // echo $ModalSecondThirdBeforeBody;
     echo '<!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong'.$x.'">
-      Launch demo modal
+      View Plot
     </button>';
     echo'<!-- Modal -->
     <div class="modal fade" id="exampleModalLong'.$x.'" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle'.$x.'" aria-hidden="true">
