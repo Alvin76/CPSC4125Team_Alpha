@@ -92,8 +92,25 @@ function getMovies($search){
   //     <div class="modal-body">';
 //
   // $modal2 = '</div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button><button type="button" class="btn btn-primary">Save changes</button></div></div></div></div>';
-
-
+$modalFirstThirdBeforeTitle = '<div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">';
+$ModalSecondThirdBeforeBody =  '</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body"><p>';
+$ModalThirdEnd = '</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>';
 
   echo '<div class ="movie-wrapper">';
   for ($x = 0; $x < $NumberOfElements ; $x++) {
@@ -112,7 +129,11 @@ function getMovies($search){
     //     echo   '</button>';
     //   echo   '</div>';
     //   echo '   <div class="modal-body">';
+      echo  $modalFirstThirdBeforeTitle;
+      echo $response["Search"][$x]["Title"].'<br>';
+      echo $ModalSecondThirdBeforeBody;
      details($response["Search"][$x]["imdbID"]);
+     echo $ModalThirdEnd;
      // echo $x;
      // echo '</div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button><button type="button" class="btn btn-primary">Save changes</button></div></div></div></div>';
      // /*details($response["Search"][$x]["imdbID"]);*/
